@@ -10,7 +10,7 @@
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
 <style>
 /* =============================================
    ARIZONA SUNSET PALETTE
@@ -56,10 +56,17 @@
   --t:          0.22s ease;
 }
 
+
+.icon { display:inline-block; vertical-align:middle; flex-shrink:0; }
+.icon-sm { width:16px; height:16px; }
+.icon-lg { width:28px; height:28px; }
+.icon-xl { width:40px; height:40px; }
+.ficon svg { width:36px; height:36px; stroke:var(--gold); display:block; margin:0 auto; }
+
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body {
-  font-family:'Jost', sans-serif;
+  font-family:'DM Sans', sans-serif;
   background: var(--sand);
   color: var(--text);
   overflow-x: hidden;
@@ -400,10 +407,10 @@ nav {
 .badge-new { background:#FCE4E4; color:#8B1A1A; }
 .pbody { padding:0.9rem 1rem 1.1rem; display:flex; flex-direction:column; flex:1; }
 .psize { font-size:0.68rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--faint); margin-bottom:0.3rem; }
-.pname { font-family:'Cormorant Garamond',serif; font-size:1.05rem; font-weight:600; color:var(--dusk); margin-bottom:0.3rem; line-height:1.25; }
+.pname { font-family:'EB Garamond', serif; font-size:1.05rem; font-weight:600; color:var(--dusk); margin-bottom:0.3rem; line-height:1.25; }
 .pscent { font-size:0.78rem; color:var(--muted); line-height:1.55; margin-bottom:0.8rem; flex:1; }
 .pfoot { display:flex; align-items:center; justify-content:space-between; gap:0.5rem; margin-top:auto; }
-.pprice { font-family:'Cormorant Garamond',serif; font-size:1.25rem; font-weight:700; color:var(--coral); }
+.pprice { font-family:'EB Garamond', serif; font-size:1.25rem; font-weight:700; color:var(--coral); }
 .btn-add {
   background: var(--dusk);
   color: var(--white);
@@ -436,7 +443,7 @@ nav {
 }
 .fcard:hover { background:rgba(245,200,66,0.08); border-color:rgba(245,200,66,0.3); }
 .ficon { font-size:2.2rem; margin-bottom:0.75rem; }
-.ftitle { font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:600; color:var(--gold); margin-bottom:0.5rem; }
+.ftitle { font-family:'EB Garamond', serif; font-size:1.1rem; font-weight:600; color:var(--gold); margin-bottom:0.5rem; }
 .ftext { font-size:0.82rem; color:rgba(255,255,255,0.55); line-height:1.75; }
 
 /* =============================================
@@ -484,7 +491,7 @@ nav {
   box-shadow: var(--shadow-md);
   border: 4px solid var(--white);
 }
-.about-img-badge .bn { font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:700; color:var(--white); line-height:1; }
+.about-img-badge .bn { font-family:'EB Garamond', serif; font-size:1.6rem; font-weight:700; color:var(--white); line-height:1; }
 .about-img-badge .bl { font-size:0.6rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.8); margin-top:0.15rem; }
 .about-text-side {}
 .about-quote {
@@ -513,7 +520,7 @@ nav {
   flex-shrink: 0;
 }
 .about-sig-img img { width:100%; height:100%; object-fit:cover; object-position:top; }
-.about-sig-name { font-family:'Cormorant Garamond',serif; font-size:1.05rem; font-weight:600; color:var(--dusk); }
+.about-sig-name { font-family:'EB Garamond', serif; font-size:1.05rem; font-weight:600; color:var(--dusk); }
 .about-sig-role { font-size:0.72rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--coral); margin-top:0.15rem; }
 .about-socials { margin-top:1.5rem; display:flex; gap:0.75rem; flex-wrap:wrap; }
 .social-btn {
@@ -543,7 +550,7 @@ nav {
   flex-wrap: wrap;
   gap: 1.5rem;
 }
-.rating-num { font-family:'Cormorant Garamond',serif; font-size:4rem; font-weight:700; color:var(--dusk); line-height:1; }
+.rating-num { font-family:'EB Garamond', serif; font-size:4rem; font-weight:700; color:var(--dusk); line-height:1; }
 .rating-stars { font-size:1.3rem; color:var(--amber); letter-spacing:3px; }
 .rating-meta { font-size:0.82rem; color:var(--muted); margin-top:0.25rem; }
 .rgrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1.5rem; }
@@ -576,7 +583,7 @@ nav {
                     radial-gradient(circle at 80% 50%, rgba(255,255,255,0.05) 0%, transparent 50%);
 }
 #cta h2 {
-  font-family:'Cormorant Garamond',serif;
+  font-family:'EB Garamond', serif;
   font-size:2.4rem;
   font-weight:600;
   color:var(--white);
@@ -639,7 +646,7 @@ nav {
 }
 .legal-close:hover { background:var(--dusk); color:var(--white); border-color:var(--dusk); }
 .legal-box h2 {
-  font-family:'Cormorant Garamond',serif;
+  font-family:'EB Garamond', serif;
   font-size:1.8rem; font-weight:700; color:var(--dusk);
   margin-bottom:0.5rem;
 }
@@ -667,7 +674,7 @@ nav {
   padding:2.25rem;
   box-shadow:var(--shadow-sm);
 }
-.cform-title { font-family:'Cormorant Garamond',serif; font-size:1.5rem; color:var(--dusk); margin-bottom:1.5rem; }
+.cform-title { font-family:'EB Garamond', serif; font-size:1.5rem; color:var(--dusk); margin-bottom:1.5rem; }
 .fg { margin-bottom:1.1rem; }
 .flabel {
   display:block;
@@ -701,7 +708,7 @@ textarea.finput { resize:vertical; min-height:130px; }
 }
 .btn-send:hover { transform:translateY(-1px); box-shadow:0 8px 24px rgba(217,79,43,0.4); }
 .cinfo-side {}
-.cinfo-title { font-family:'Cormorant Garamond',serif; font-size:2rem; color:var(--dusk); margin-bottom:0.75rem; }
+.cinfo-title { font-family:'EB Garamond', serif; font-size:2rem; color:var(--dusk); margin-bottom:0.75rem; }
 .cinfo-text { color:var(--muted); font-size:0.92rem; line-height:1.85; margin-bottom:2rem; }
 .clinks { display:flex; flex-direction:column; gap:0.75rem; }
 .clink {
@@ -733,7 +740,7 @@ footer {
   border-bottom:1px solid rgba(255,255,255,0.07);
   margin-bottom:2rem;
 }
-.footer-brand { font-family:'Cormorant Garamond',serif; font-size:1.5rem; color:rgba(255,255,255,0.9); margin-bottom:0.75rem; }
+.footer-brand { font-family:'EB Garamond', serif; font-size:1.5rem; color:rgba(255,255,255,0.9); margin-bottom:0.75rem; }
 .footer-brand em { color:var(--gold); font-style:normal; }
 .footer-tagline { font-size:0.82rem; line-height:1.8; color:rgba(255,255,255,0.38); max-width:260px; margin-bottom:1.25rem; }
 .footer-social { display:flex; gap:0.6rem; }
@@ -787,7 +794,7 @@ footer {
   display:flex; align-items:center; justify-content:space-between;
   flex-shrink:0;
 }
-.cart-hdr h2 { font-family:'Cormorant Garamond',serif; font-size:1.4rem; color:var(--dusk); }
+.cart-hdr h2 { font-family:'EB Garamond', serif; font-size:1.4rem; color:var(--dusk); }
 .cart-x { background:none; border:none; font-size:1.3rem; color:var(--muted); padding:0.25rem; border-radius:4px; transition:color var(--t); }
 .cart-x:hover { color:var(--coral); }
 .cart-items { flex:1; overflow-y:auto; padding:1.25rem 1.5rem; }
@@ -808,7 +815,7 @@ footer {
 .citem-img img { width:100%; height:100%; object-fit:cover; }
 .citem-img-emoji { width:100%; height:100%; display:flex; align-items:center; justify-content:center; font-size:1.8rem; }
 .citem-info { flex:1; min-width:0; }
-.citem-name { font-family:'Cormorant Garamond',serif; font-size:0.95rem; font-weight:600; color:var(--dusk); margin-bottom:0.15rem; }
+.citem-name { font-family:'EB Garamond', serif; font-size:0.95rem; font-weight:600; color:var(--dusk); margin-bottom:0.15rem; }
 .citem-size { font-size:0.68rem; color:var(--faint); letter-spacing:0.07em; text-transform:uppercase; }
 .citem-ctrl { display:flex; align-items:center; gap:0.4rem; margin-top:0.55rem; }
 .qbtn {
@@ -822,7 +829,7 @@ footer {
 .qnum { font-size:0.88rem; font-weight:700; color:var(--dusk); min-width:18px; text-align:center; }
 .rm-btn { background:none; border:none; color:var(--faint); font-size:0.72rem; margin-left:0.4rem; transition:color var(--t); border-radius:3px; padding:0.1rem 0.35rem; }
 .rm-btn:hover { color:#C0392B; }
-.citem-price { font-family:'Cormorant Garamond',serif; font-size:1.05rem; font-weight:700; color:var(--coral); flex-shrink:0; padding-top:2px; }
+.citem-price { font-family:'EB Garamond', serif; font-size:1.05rem; font-weight:700; color:var(--coral); flex-shrink:0; padding-top:2px; }
 .cart-ftr {
   padding:1.25rem 1.5rem;
   border-top:1px solid var(--border);
@@ -830,7 +837,7 @@ footer {
 }
 .cart-sub { display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem; }
 .cart-sub .lbl { font-size:0.78rem; color:var(--muted); font-weight:700; letter-spacing:0.06em; text-transform:uppercase; }
-.cart-sub .amt { font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:700; color:var(--dusk); }
+.cart-sub .amt { font-family:'EB Garamond', serif; font-size:1.5rem; font-weight:700; color:var(--dusk); }
 .cart-ship { font-size:0.72rem; color:var(--coral); font-weight:700; margin-bottom:1rem; }
 .btn-checkout {
   width:100%;
@@ -898,9 +905,9 @@ footer {
 }
 .modal-body { padding:1.75rem; }
 .modal-badges { display:flex; gap:0.5rem; margin-bottom:0.75rem; }
-.modal-title { font-family:'Cormorant Garamond',serif; font-size:1.8rem; font-weight:600; color:var(--dusk); margin-bottom:0.2rem; }
+.modal-title { font-family:'EB Garamond', serif; font-size:1.8rem; font-weight:600; color:var(--dusk); margin-bottom:0.2rem; }
 .modal-size { font-size:0.72rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--faint); margin-bottom:0.75rem; }
-.modal-price { font-family:'Cormorant Garamond',serif; font-size:2.2rem; font-weight:700; color:var(--coral); margin-bottom:1rem; }
+.modal-price { font-family:'EB Garamond', serif; font-size:2.2rem; font-weight:700; color:var(--coral); margin-bottom:1rem; }
 .modal-scents {
   background:var(--sand); border:1px solid var(--border);
   border-radius:var(--radius); padding:0.75rem 1rem;
@@ -981,9 +988,95 @@ footer {
 </head>
 <body>
 
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <!-- flame / candle -->
+  <symbol id="ic-flame" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 22c4.418 0 8-3.582 8-8 0-3.2-2-6-4-8-1 3-3 4-3 4s-1-2-1-4c-2 2-4 5-4 8 0 4.418 3.582 8 8 8z"/>
+    <path d="M12 17c1.657 0 3-1.343 3-3 0-1.2-.75-2.25-1.5-3-.375 1.125-1.125 1.5-1.125 1.5S12 11.25 12 10c-.75.75-1.5 1.875-1.5 3 0 1.657 1.343 3 3 3z" stroke-width="1.4"/>
+  </symbol>
+  <!-- leaf -->
+  <symbol id="ic-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/>
+    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+  </symbol>
+  <!-- hand / handmade -->
+  <symbol id="ic-hand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 11V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2"/>
+    <path d="M14 10V4a2 2 0 0 0-2-2 2 2 0 0 0-2 2v2"/>
+    <path d="M10 10.5V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2v8"/>
+    <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/>
+  </symbol>
+  <!-- wind / scent -->
+  <symbol id="ic-wind" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/>
+    <path d="M9.6 4.6A2 2 0 1 1 11 8H2"/>
+    <path d="M12.6 19.4A2 2 0 1 0 14 16H2"/>
+  </symbol>
+  <!-- box / shipping -->
+  <symbol id="ic-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+    <line x1="12" y1="22.08" x2="12" y2="12"/>
+  </symbol>
+  <!-- gift -->
+  <symbol id="ic-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20 12 20 22 4 22 4 12"/>
+    <rect x="2" y="7" width="20" height="5"/>
+    <line x1="12" y1="22" x2="12" y2="7"/>
+    <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+    <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+  </symbol>
+  <!-- star -->
+  <symbol id="ic-star" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+  </symbol>
+  <!-- cart / bag -->
+  <symbol id="ic-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+    <line x1="3" y1="6" x2="21" y2="6"/>
+    <path d="M16 10a4 4 0 0 1-8 0"/>
+  </symbol>
+  <!-- mail -->
+  <symbol id="ic-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+    <polyline points="22,6 12,13 2,6"/>
+  </symbol>
+  <!-- map pin -->
+  <symbol id="ic-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+    <circle cx="12" cy="10" r="3"/>
+  </symbol>
+  <!-- facebook (f) -->
+  <symbol id="ic-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+  </symbol>
+  <!-- instagram -->
+  <symbol id="ic-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+  </symbol>
+  <!-- lock -->
+  <symbol id="ic-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+  </symbol>
+  <!-- check -->
+  <symbol id="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20 6 9 17 4 12"/>
+  </symbol>
+  <!-- menu / hamburger -->
+  <symbol id="ic-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <line x1="3" y1="12" x2="21" y2="12"/>
+    <line x1="3" y1="6" x2="21" y2="6"/>
+    <line x1="3" y1="18" x2="21" y2="18"/>
+  </symbol>
+</svg>
+
+
 <!-- ANNOUNCEMENT -->
 <div class="bar">
-  🕯️ Free shipping on orders over $35 <span>·</span> Hand-poured in Saint David, Arizona <span>·</span> 5-Star Rated
+  Free shipping on orders over $35 <span>·</span> Hand-poured in Saint David, Arizona <span>·</span> 5.0 Star Rated
 </div>
 
 <!-- NAV -->
@@ -998,7 +1091,7 @@ footer {
     </ul>
     <div class="nav-right">
       <button class="cart-btn" onclick="openCart()">
-        🛒 Cart
+        <svg class="icon icon-sm" width="20" height="20" aria-hidden="true"><use href="#ic-bag"/></svg> Cart
         <span class="cart-count hidden" id="cartCount">0</span>
       </button>
       <button class="menu-toggle" id="menuToggle" onclick="toggleNav()">
@@ -1012,19 +1105,19 @@ footer {
 <section class="hero" id="home">
   <div class="hero-bg"></div>
 <div class="hero-content">
-    <div class="hero-badge">🏜️ Handcrafted in Arizona since 2014</div>
+    <div class="hero-badge"><svg class="icon icon-sm" width="20" height="20" aria-hidden="true"><use href="#ic-flame"/></svg> Handcrafted in Arizona since 2014</div>
     <h1>Where Every Flame<br>Tells a <em>Story</em></h1>
     <p class="hero-sub">Premium parasoy & soy wax candles — hand-poured with love in the Arizona desert</p>
     <p class="hero-tags">Small batch &nbsp;·&nbsp; Highly scented &nbsp;·&nbsp; Non-toxic &nbsp;·&nbsp; Fast shipping</p>
     <div class="hero-stats">
       <div class="hero-stat"><div class="n">503+</div><div class="l">Happy Customers</div></div>
-      <div class="hero-stat"><div class="n">5.0★</div><div class="l">Perfect Rating</div></div>
+      <div class="hero-stat"><div class="n">5.0</div><div class="l" style="display:flex;align-items:center;gap:2px;justify-content:center"><svg class="icon" width="12" height="12" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="12" height="12" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="12" height="12" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="12" height="12" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="12" height="12" aria-hidden="true"><use href="#ic-star"/></svg></div></div>
       <div class="hero-stat"><div class="n">11</div><div class="l">Years of Craft</div></div>
       <div class="hero-stat"><div class="n">20+</div><div class="l">Scents Available</div></div>
     </div>
     <div class="hero-btns">
       <button class="btn-sunset" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Shop the Collection</button>
-      <button class="btn-ghost-white" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Meet Raquel</button>
+      <button class="btn-ghost-white" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Our Story</button>
     </div>
   </div>
 </section>
@@ -1039,12 +1132,12 @@ footer {
     </div>
     <div class="filter-row">
       <button class="fbtn active" onclick="filterP('all',this)">All (20)</button>
-      <button class="fbtn" onclick="filterP('floral',this)">🌸 Floral</button>
-      <button class="fbtn" onclick="filterP('citrus',this)">🍋 Citrus</button>
-      <button class="fbtn" onclick="filterP('woodsy',this)">🌲 Woodsy</button>
-      <button class="fbtn" onclick="filterP('bakery',this)">🍰 Bakery</button>
-      <button class="fbtn" onclick="filterP('coastal',this)">🌊 Coastal</button>
-      <button class="fbtn" onclick="filterP('specialty',this)">✨ Specialty</button>
+      <button class="fbtn" onclick="filterP('floral',this)">Floral</button>
+      <button class="fbtn" onclick="filterP('citrus',this)">Citrus</button>
+      <button class="fbtn" onclick="filterP('woodsy',this)">Woodsy</button>
+      <button class="fbtn" onclick="filterP('bakery',this)">Bakery</button>
+      <button class="fbtn" onclick="filterP('coastal',this)">Coastal</button>
+      <button class="fbtn" onclick="filterP('specialty',this)">Specialty</button>
     </div>
     <div class="pgrid" id="pgrid"></div>
   </div>
@@ -1058,11 +1151,11 @@ footer {
       <h2 class="sec-title" style="color:var(--white)">Made Different,<br>Made for You</h2>
     </div>
     <div class="fgrid">
-      <div class="fcard"><div class="ficon">🌿</div><div class="ftitle">Clean Wax Blend</div><div class="ftext">Premium parasoy and soy wax — no harsh toxins. Burns clean from the very first light to the last flicker.</div></div>
-      <div class="fcard"><div class="ficon">👐</div><div class="ftitle">Truly Hand-Poured</div><div class="ftext">Every single candle is made by hand in small batches. No mass production, ever — just Raquel and her craft.</div></div>
-      <div class="fcard"><div class="ficon">💨</div><div class="ftitle">Strong Scent Throw</div><div class="ftext">Highly scented formulas engineered to fill your entire room with lasting fragrance that doesn't fade fast.</div></div>
-      <div class="fcard"><div class="ficon">📦</div><div class="ftitle">Lightning Shipping</div><div class="ftext">Customers rave about how fast orders arrive — often shipped the very next day right from Arizona to your door.</div></div>
-      <div class="fcard"><div class="ficon">🎁</div><div class="ftitle">Gift-Ready Always</div><div class="ftext">Beautiful presentation straight out of the box. Perfect for birthdays, holidays, or just because — no wrapping needed.</div></div>
+      <div class="fcard"><div class="ficon"><svg class="" width="36" height="36" aria-hidden="true"><use href="#ic-leaf"/></svg></div><div class="ftitle">Clean Wax Blend</div><div class="ftext">Premium parasoy and soy wax — no harsh toxins. Burns clean from the very first light to the last flicker.</div></div>
+      <div class="fcard"><div class="ficon"><svg class="" width="36" height="36" aria-hidden="true"><use href="#ic-hand"/></svg></div><div class="ftitle">Truly Hand-Poured</div><div class="ftext">Every single candle is made by hand in small batches. No mass production, ever — just Raquel and her craft.</div></div>
+      <div class="fcard"><div class="ficon"><svg class="" width="36" height="36" aria-hidden="true"><use href="#ic-wind"/></svg></div><div class="ftitle">Strong Scent Throw</div><div class="ftext">Highly scented formulas engineered to fill your entire room with lasting fragrance that doesn't fade fast.</div></div>
+      <div class="fcard"><div class="ficon"><svg class="" width="36" height="36" aria-hidden="true"><use href="#ic-box"/></svg></div><div class="ftitle">Lightning Shipping</div><div class="ftext">Customers rave about how fast orders arrive — often shipped the very next day right from Arizona to your door.</div></div>
+      <div class="fcard"><div class="ficon"><svg class="" width="36" height="36" aria-hidden="true"><use href="#ic-gift"/></svg></div><div class="ftitle">Gift-Ready Always</div><div class="ftext">Beautiful presentation straight out of the box. Perfect for birthdays, holidays, or just because — no wrapping needed.</div></div>
     </div>
   </div>
 </section>
@@ -1074,8 +1167,9 @@ footer {
       <div class="about-img-wrap">
         <div class="about-img-frame">
           <img src="https://i.etsystatic.com/isa/faf79b/1195961885507/isa_760xN.1195961885507_hkpl.jpg"
-               alt="Raquel Thompson White — founder of The Candle Bunkhouse"
-               onerror="this.onerror=null;this.src='';this.parentNode.innerHTML='<div style=\'width:100%;height:100%;background:linear-gradient(135deg,var(--sand-dark),var(--terracotta));display:flex;align-items:center;justify-content:center;font-size:6rem\'>🕯️</div>'">
+               alt="Raquel Thompson White, founder of The Candle Bunkhouse"
+               id="raquelPhoto"
+               style="width:100%;height:100%;object-fit:cover;object-position:top center"></div>'">
           <div class="about-img-overlay"></div>
         </div>
         <div class="about-img-badge">
@@ -1084,7 +1178,7 @@ footer {
         </div>
       </div>
       <div class="about-text-side">
-        <div class="sec-label">Meet Raquel</div>
+        <div class="sec-label">Our Story</div>
         <h2 class="sec-title">From Hobby<br>to Heart</h2>
         <p class="about-quote">"Wherever life plants you,<br>bloom with grace."</p>
         <p class="about-body">What started as a deep love of fragrance blossomed into something truly beautiful. Raquel Thompson White began her candle-making journey as a simple hobby — a passion for scents and the therapeutic joy of creating with her hands.</p>
@@ -1102,8 +1196,8 @@ footer {
           </div>
         </div>
         <div class="about-socials">
-          <a href="http://www.facebook.com/thecandlebunkhouse" target="_blank" class="social-btn">📘 Facebook</a>
-          <a href="http://www.instagram.com/RAQUELTHOMPSON38" target="_blank" class="social-btn">📸 Instagram</a>
+          <a href="http://www.facebook.com/thecandlebunkhouse" target="_blank" class="social-btn"><svg class="icon icon-sm" width="20" height="20" aria-hidden="true"><use href="#ic-fb"/></svg> Facebook</a>
+          <a href="http://www.instagram.com/RAQUELTHOMPSON38" target="_blank" class="social-btn"><svg class="icon icon-sm" width="20" height="20" aria-hidden="true"><use href="#ic-ig"/></svg> Instagram</a>
         </div>
       </div>
     </div>
@@ -1120,19 +1214,19 @@ footer {
     <div class="rating-bar">
       <div class="rating-num">5.0</div>
       <div>
-        <div class="rating-stars">★★★★★</div>
+        <div class="rating-stars" style="display:flex;gap:2px"><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg></div>
         <div class="rating-meta">15 verified reviews &nbsp;·&nbsp; 503 happy customers &nbsp;·&nbsp; 11 years crafting candles</div>
       </div>
     </div>
     <div class="rgrid">
-      <div class="rcard"><div class="rstars">★★★★★</div><p class="rtext">"Not only do the candles smell amazing but shipping was lightning fast! 1000% recommend to anyone that wants their space to smell good 💜"</p><div class="rauthor">Verified Buyer</div><div class="rdate">December 2023</div></div>
-      <div class="rcard"><div class="rstars">★★★★★</div><p class="rtext">"Beautiful packaging! The candles always burn very clean. The perfect amount of fragrance! The only candles and wax melts that don't give me a headache."</p><div class="rauthor">Brittany</div><div class="rdate">December 2023</div><div class="rprod">Verified Purchase · Wax Melts</div></div>
-      <div class="rcard"><div class="rstars">★★★★★</div><p class="rtext">"Awesome as always. Fast shipping and smells amazing. Def will buy again."</p><div class="rauthor">Julie</div><div class="rdate">August 2024</div><div class="rprod">Verified Purchase · Wax Melts</div></div>
-      <div class="rcard"><div class="rstars">★★★★★</div><p class="rtext">"I purchased this for my sister for her birthday and she loves the scent. It arrives in plenty of time. Very high quality candle. Excellent customer service."</p><div class="rauthor">Keasha</div><div class="rdate">March 2024</div><div class="rprod">Verified Purchase · Paint Can Candle</div></div>
-      <div class="rcard"><div class="rstars">★★★★★</div><p class="rtext">"Love my melts from The Candle Bunkhouse. Wonderfully delightful scents that last."</p><div class="rauthor">EvolvedThought</div><div class="rdate">June 2024</div><div class="rprod">Verified Purchase · Wax Melts</div></div>
-      <div class="rcard"><div class="rstars">★★★★★</div><p class="rtext">"I ordered and the very next day my order was shipped and had it the next day. These are so unique and the smell is amazing!"</p><div class="rauthor">Debbie</div><div class="rdate">September 2023</div><div class="rprod">Verified Purchase · Desert Flower Pottery</div></div>
-      <div class="rcard"><div class="rstars">★★★★★</div><p class="rtext">"Great candles and superb customer service. I will be a customer for life!"</p><div class="rauthor">EvolvedThought</div><div class="rdate">November 2023</div><div class="rprod">Verified Purchase</div></div>
-      <div class="rcard"><div class="rstars">★★★★★</div><p class="rtext">"Beautiful beautiful beautiful!!! Amazing!! Love these! And the service… top notch!"</p><div class="rauthor">Debbie</div><div class="rdate">September 2023</div><div class="rprod">Verified Purchase · Saguaro Candle</div></div>
+      <div class="rcard"><div class="rstars" style="display:flex;gap:2px;margin-bottom:0.65rem"><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg></div><p class="rtext">"Not only do the candles smell amazing but shipping was lightning fast! 1000% recommend to anyone that wants their space to smell good."</p><div class="rauthor">Verified Buyer</div><div class="rdate">December 2023</div></div>
+      <div class="rcard"><div class="rstars" style="display:flex;gap:2px;margin-bottom:0.65rem"><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg></div><p class="rtext">"Beautiful packaging! The candles always burn very clean. The perfect amount of fragrance! The only candles and wax melts that don't give me a headache."</p><div class="rauthor">Brittany</div><div class="rdate">December 2023</div><div class="rprod">Verified Purchase · Wax Melts</div></div>
+      <div class="rcard"><div class="rstars" style="display:flex;gap:2px;margin-bottom:0.65rem"><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg></div><p class="rtext">"Awesome as always. Fast shipping and smells amazing. Def will buy again."</p><div class="rauthor">Julie</div><div class="rdate">August 2024</div><div class="rprod">Verified Purchase · Wax Melts</div></div>
+      <div class="rcard"><div class="rstars" style="display:flex;gap:2px;margin-bottom:0.65rem"><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg></div><p class="rtext">"I purchased this for my sister for her birthday and she loves the scent. It arrives in plenty of time. Very high quality candle. Excellent customer service."</p><div class="rauthor">Keasha</div><div class="rdate">March 2024</div><div class="rprod">Verified Purchase · Paint Can Candle</div></div>
+      <div class="rcard"><div class="rstars" style="display:flex;gap:2px;margin-bottom:0.65rem"><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg></div><p class="rtext">"Love my melts from The Candle Bunkhouse. Wonderfully delightful scents that last."</p><div class="rauthor">EvolvedThought</div><div class="rdate">June 2024</div><div class="rprod">Verified Purchase · Wax Melts</div></div>
+      <div class="rcard"><div class="rstars" style="display:flex;gap:2px;margin-bottom:0.65rem"><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg></div><p class="rtext">"I ordered and the very next day my order was shipped and had it the next day. These are so unique and the smell is amazing!"</p><div class="rauthor">Debbie</div><div class="rdate">September 2023</div><div class="rprod">Verified Purchase · Desert Flower Pottery</div></div>
+      <div class="rcard"><div class="rstars" style="display:flex;gap:2px;margin-bottom:0.65rem"><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg></div><p class="rtext">"Great candles and superb customer service. I will be a customer for life!"</p><div class="rauthor">EvolvedThought</div><div class="rdate">November 2023</div><div class="rprod">Verified Purchase</div></div>
+      <div class="rcard"><div class="rstars" style="display:flex;gap:2px;margin-bottom:0.65rem"><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg><svg class="icon" width="16" height="16" style="color:var(--amber)" aria-hidden="true"><use href="#ic-star"/></svg></div><p class="rtext">"Beautiful beautiful beautiful!!! Amazing!! Love these! And the service… top notch!"</p><div class="rauthor">Debbie</div><div class="rdate">September 2023</div><div class="rprod">Verified Purchase · Saguaro Candle</div></div>
     </div>
   </div>
 </section>
@@ -1158,19 +1252,19 @@ footer {
         <p class="cinfo-text">Have a question about a scent? Interested in a custom order, bulk pricing, or wholesale? Raquel personally reads and responds to every message. We're a small family business and we genuinely care about every single customer.</p>
         <div class="clinks">
           <a href="mailto:hello@thecandlebunkhouse.com" class="clink">
-            <span class="clink-icon">✉️</span>
+            <span class="clink-icon"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#ic-mail"/></svg></span>
             <div><div>Email Us</div><span class="clink-sub">hello@thecandlebunkhouse.com</span></div>
           </a>
           <a href="http://www.facebook.com/thecandlebunkhouse" target="_blank" class="clink">
-            <span class="clink-icon">📘</span>
+            <span class="clink-icon"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#ic-fb"/></svg></span>
             <div><div>Facebook</div><span class="clink-sub">@thecandlebunkhouse</span></div>
           </a>
           <a href="http://www.instagram.com/RAQUELTHOMPSON38" target="_blank" class="clink">
-            <span class="clink-icon">📸</span>
+            <span class="clink-icon"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#ic-ig"/></svg></span>
             <div><div>Instagram</div><span class="clink-sub">@RAQUELTHOMPSON38</span></div>
           </a>
           <div class="clink" style="cursor:default">
-            <span class="clink-icon">📍</span>
+            <span class="clink-icon"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#ic-pin"/></svg></span>
             <div><div>Based In</div><span class="clink-sub">Saint David, Arizona 85630</span></div>
           </div>
         </div>
@@ -1207,9 +1301,9 @@ footer {
         <div class="footer-brand">The Candle <em>Bunkhouse</em></div>
         <p class="footer-tagline">Hand-poured parasoy & soy wax candles crafted with love in Saint David, Arizona. Small batch, highly scented, non-toxic — since 2014.</p>
         <div class="footer-social">
-          <a href="http://www.facebook.com/thecandlebunkhouse" target="_blank" class="fsoc">📘</a>
-          <a href="http://www.instagram.com/RAQUELTHOMPSON38" target="_blank" class="fsoc">📸</a>
-          <a href="mailto:hello@thecandlebunkhouse.com" class="fsoc">✉️</a>
+          <a href="http://www.facebook.com/thecandlebunkhouse" target="_blank" class="fsoc" aria-label="Facebook"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#ic-fb"/></svg></a>
+          <a href="http://www.instagram.com/RAQUELTHOMPSON38" target="_blank" class="fsoc" aria-label="Instagram"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#ic-ig"/></svg></a>
+          <a href="mailto:hello@thecandlebunkhouse.com" class="fsoc" aria-label="Email"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#ic-mail"/></svg></a>
         </div>
       </div>
       <div>
@@ -1249,7 +1343,7 @@ footer {
         <a href="#" onclick="openLegal('privacy');return false;">Privacy</a> &nbsp;·&nbsp;
         <a href="#" onclick="openLegal('terms');return false;">Terms</a>
       </div>
-      <div style="font-size:0.68rem;color:rgba(255,255,255,0.18)">Made with 🕯️ in Arizona</div>
+      <div style="font-size:0.68rem;color:rgba(255,255,255,0.18)">Handcrafted with care in Arizona</div>
     </div>
   </div>
 </footer>
@@ -1390,10 +1484,10 @@ footer {
   <div class="cart-items" id="cartItems"></div>
   <div class="cart-ftr" id="cartFtr" style="display:none">
     <div class="cart-sub"><span class="lbl">Subtotal</span><span class="amt" id="cartTotal">$0.00</span></div>
-    <div class="cart-ship">✓ Free shipping on orders over $35</div>
+    <div class="cart-ship"><svg class="icon icon-sm" style="color:var(--coral)" aria-hidden="true"><use href="#ic-check"/></svg> Free shipping on orders over $35</div>
     <button class="btn-checkout" onclick="checkoutMsg()">Proceed to Checkout →</button>
     <button class="btn-cont" onclick="closeCart()">Continue Shopping</button>
-    <p class="stripe-note">🔒 Secure checkout · Payment coming soon</p>
+    <p class="stripe-note"><svg class="icon icon-sm" width="20" height="20" aria-hidden="true"><use href="#ic-lock"/></svg> Secure checkout · Payment coming soon</p>
   </div>
 </div>
 
@@ -1417,11 +1511,11 @@ footer {
           <button onclick="adjQty(1)">+</button>
         </div>
       </div>
-      <button class="btn-modal-add" onclick="addFromModal()">Add to Cart 🛒</button>
+      <button class="btn-modal-add" onclick="addFromModal()">Add to Cart</button>
       <div class="modal-trust">
-        <span>🌿 Non-toxic wax</span>
-        <span>👐 Hand-poured</span>
-        <span>📦 Fast shipping</span>
+        <span><svg class="icon icon-sm" width="20" height="20" aria-hidden="true"><use href="#ic-leaf"/></svg> Non-toxic wax</span>
+        <span><svg class="icon icon-sm" width="20" height="20" aria-hidden="true"><use href="#ic-hand"/></svg> Hand-poured</span>
+        <span><svg class="icon icon-sm" width="20" height="20" aria-hidden="true"><use href="#ic-box"/></svg> Fast shipping</span>
       </div>
     </div>
   </div>
@@ -1486,7 +1580,7 @@ function renderP(cat){
         <img src="${p.img}" alt="${p.name}" loading="lazy"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
           style="width:100%;height:100%;object-fit:cover;display:block">
-        <div class="pthumb-emoji" style="display:none">${p.emoji}</div>
+        <div class="pthumb-emoji" style="display:none;align-items:center;justify-content:center;background:var(--sand-dark)"><svg width="36" height="36" style="opacity:0.35;stroke:var(--muted)" fill="none" stroke-width="1.5" aria-hidden="true"><use href="#ic-flame"/></svg></div>
       </div>
       <div class="pbody">
         <div class="psize">${p.size}</div>
@@ -1519,7 +1613,7 @@ function filterP(cat, btn){
 function quickAdd(id){
   const p=products.find(x=>x.id===id);
   addToCart(p,1);
-  showToast(`🕯️ ${p.name} added to cart`);
+  showToast(`${p.name} added to cart`);
 }
 function addToCart(p,qty){
   const ex=cart.find(i=>i.id===p.id);
@@ -1543,7 +1637,7 @@ function closeCart(){
 function renderCart(){
   const c=document.getElementById('cartItems'), f=document.getElementById('cartFtr');
   if(!cart.length){
-    c.innerHTML='<div class="cart-empty"><div class="ei">🕯️</div><p>Your cart is empty.<br>Browse our collection!</p></div>';
+    c.innerHTML='<div class="cart-empty"><div class="ei"><svg width="40" height="40" style="opacity:0.3;stroke:var(--muted)" fill="none" stroke-width="1.5"><use href="#ic-flame"/></svg></div><p>Your cart is empty.<br>Browse our collection!</p></div>';
     f.style.display='none'; return;
   }
   f.style.display='block';
@@ -1551,13 +1645,13 @@ function renderCart(){
     <div class="citem">
       <div class="citem-img">
         <img src="${item.img}" alt="${item.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="citem-img-emoji" style="display:none">${item.emoji}</div>
+        <div class="citem-img-emoji" style="display:none;align-items:center;justify-content:center"><svg width="28" height="28" style="opacity:0.4;stroke:var(--muted)" fill="none" stroke-width="1.5"><use href="#ic-flame"/></svg></div>
       </div>
       <div class="citem-info">
         <div class="citem-name">${item.name}</div>
         <div class="citem-size">${item.size}</div>
         <div class="citem-ctrl">
-          <button class="qbtn" onclick="chgQty(${item.id},-1)">−</button>
+          <button class="qbtn" onclick="chgQty(${item.id},-1)">-</button>
           <span class="qnum">${item.qty}</span>
           <button class="qbtn" onclick="chgQty(${item.id},1)">+</button>
           <button class="rm-btn" onclick="rmItem(${item.id})">Remove</button>
@@ -1574,23 +1668,29 @@ function chgQty(id,d){
   updateBadge(); renderCart();
 }
 function rmItem(id){ cart=cart.filter(x=>x.id!==id); updateBadge(); renderCart(); }
-function checkoutMsg(){ closeCart(); showToast('💳 Secure checkout coming soon — contact us to order!'); }
+function checkoutMsg(){ closeCart(); showToast('Secure checkout coming soon — contact us to order!'); }
 
 // =============================================
 // PRODUCT MODAL
 // =============================================
 function openM(id){
   const p=products.find(x=>x.id===id); curProd=p;
-  document.getElementById('mThumb').innerHTML=
-    `<img src="${p.img}" alt="${p.name}" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px 14px 0 0;display:block"
-       onerror="this.outerHTML='<div class=\\"modal-thumb-emoji\\">${p.emoji}</div>'">`;
+  const fallbackThumb = '<div class="modal-thumb-emoji" style="display:flex;align-items:center;justify-content:center;background:var(--sand-dark)"><svg width="40" height="40" style="opacity:0.3;stroke:var(--muted)" fill="none" stroke-width="1.5"><use href="#ic-flame"/></svg></div>';
+  const mImg = document.createElement('img');
+  mImg.src = p.img;
+  mImg.alt = p.name;
+  mImg.style.cssText = 'width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px 14px 0 0;display:block';
+  mImg.onerror = function(){ this.parentNode.innerHTML = fallbackThumb; };
+  const mThumb = document.getElementById('mThumb');
+  mThumb.innerHTML = '';
+  mThumb.appendChild(mImg);
   document.getElementById('mBadges').innerHTML=
     (p.badge==='bestseller'?'<span class="badge badge-bs">Best Seller</span>':'')+
     (p.badge==='new'?'<span class="badge badge-new">New</span>':'');
   document.getElementById('mTitle').textContent=p.name;
   document.getElementById('mSize').textContent=p.size;
   document.getElementById('mPrice').textContent='$'+p.price.toFixed(2);
-  document.getElementById('mScents').innerHTML='🌿 Scent notes: <span>'+p.scents+'</span>';
+  document.getElementById('mScents').innerHTML='Scent notes: <span>'+p.scents+'</span>';
   document.getElementById('mDesc').textContent=p.desc;
   document.getElementById('mQty').value=1;
   document.getElementById('mOverlay').classList.add('open');
@@ -1603,7 +1703,7 @@ function addFromModal(){
   if(!curProd) return;
   const qty=Math.max(1,parseInt(document.getElementById('mQty').value)||1);
   addToCart(curProd,qty);
-  showToast(`🕯️ ${curProd.name} ×${qty} added to cart`);
+  showToast(`${curProd.name} ×${qty} added to cart`);
   closeM(); openCart();
 }
 
@@ -1626,8 +1726,8 @@ function showToast(msg){
 // =============================================
 // FORMS
 // =============================================
-function handleNL(e){ e.preventDefault(); e.target.reset(); showToast("🎉 You're on the list! Welcome to the Bunkhouse."); }
-function handleContact(e){ e.preventDefault(); e.target.reset(); showToast("✉️ Message sent! Raquel will be in touch soon."); }
+function handleNL(e){ e.preventDefault(); e.target.reset(); showToast("You're on the list! Welcome to the Bunkhouse."); }
+function handleContact(e){ e.preventDefault(); e.target.reset(); showToast('Message sent! Raquel will be in touch soon.'); }
 
 // =============================================
 // NAV
@@ -1641,6 +1741,9 @@ window.addEventListener('scroll',()=>document.getElementById('navLinks').classLi
 // =============================================
 renderP('all');
 renderCart();
+// Graceful fallback for about photo
+const rPhoto = document.getElementById('raquelPhoto');
+if(rPhoto){ rPhoto.onerror = function(){ this.style.display='none'; }; }
 </script>
 </body>
 </html>
