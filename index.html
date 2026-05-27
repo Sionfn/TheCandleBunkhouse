@@ -204,32 +204,9 @@ nav {
   z-index: 0;
 }
 /* Stars in upper portion */
-.hero-bg::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 35%;
-  background-image:
-    radial-gradient(1px 1px at 10% 15%, rgba(255,255,255,0.9) 0%, transparent 100%),
-    radial-gradient(1px 1px at 25% 8%, rgba(255,255,255,0.7) 0%, transparent 100%),
-    radial-gradient(1.5px 1.5px at 40% 20%, rgba(255,255,255,0.8) 0%, transparent 100%),
-    radial-gradient(1px 1px at 55% 12%, rgba(255,255,255,0.6) 0%, transparent 100%),
-    radial-gradient(1px 1px at 70% 5%, rgba(255,255,255,0.9) 0%, transparent 100%),
-    radial-gradient(1px 1px at 85% 18%, rgba(255,255,255,0.7) 0%, transparent 100%),
-    radial-gradient(1px 1px at 15% 28%, rgba(255,255,255,0.5) 0%, transparent 100%),
-    radial-gradient(1px 1px at 60% 25%, rgba(255,255,255,0.6) 0%, transparent 100%),
-    radial-gradient(1px 1px at 90% 10%, rgba(255,255,255,0.8) 0%, transparent 100%),
-    radial-gradient(1px 1px at 5% 5%, rgba(255,255,255,0.9) 0%, transparent 100%),
-    radial-gradient(1px 1px at 78% 28%, rgba(255,255,255,0.6) 0%, transparent 100%),
-    radial-gradient(1px 1px at 48% 6%, rgba(255,255,255,0.7) 0%, transparent 100%);
-}
+
 /* Saguaro silhouette SVG at bottom */
-.hero-saguaro {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  z-index: 1;
-  pointer-events: none;
-}
+
 .hero-content { position:relative; z-index:2; max-width:740px; }
 .hero-badge {
   display: inline-flex;
@@ -1034,26 +1011,7 @@ footer {
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-bg"></div>
-
-  <!-- Saguaro silhouette -->
-  <div class="hero-saguaro">
-    <svg viewBox="0 0 1440 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;height:220px">
-      <path d="M0,220 L0,160 Q20,160 20,140 L20,100 Q20,90 30,90 Q40,90 40,100 L40,120 Q40,130 50,130 L60,130 Q70,130 70,120 L70,80 Q70,70 80,70 Q90,70 90,80 L90,160 L110,160 L110,80 Q110,70 120,70 Q130,70 130,80 L130,120 Q130,130 140,130 L150,130 Q160,130 160,120 L160,100 Q160,90 170,90 Q180,90 180,100 L180,160 L240,160 L240,220 Z
-      M280,220 L280,140 Q280,130 290,130 Q300,130 300,140 L300,110 Q300,100 310,100 Q320,100 320,110 L320,140 L360,140 L360,220 Z
-      M400,220 L400,120 Q400,110 415,110 Q430,110 430,120 L430,90 Q430,75 445,75 Q460,75 460,90 L460,60 Q460,45 475,45 Q490,45 490,60 L490,160 L510,160 L510,220 Z
-      M550,220 L550,150 L600,150 L600,220 Z
-      M650,220 L650,130 Q650,120 660,120 Q670,120 670,130 L670,100 Q670,88 683,88 Q696,88 696,100 L696,80 Q696,65 710,65 Q724,65 724,80 L724,160 L750,160 L750,220 Z
-      M800,220 L800,155 Q800,145 810,145 Q820,145 820,155 L820,130 Q820,118 833,118 Q846,118 846,130 L846,100 Q846,85 860,85 Q874,85 874,100 L874,60 Q874,45 888,45 Q902,45 902,60 L902,160 L920,160 L920,220 Z
-      M960,220 L960,145 L1010,145 L1010,220 Z
-      M1050,220 L1050,125 Q1050,115 1062,115 Q1074,115 1074,125 L1074,95 Q1074,82 1088,82 Q1102,82 1102,95 L1102,160 L1130,160 L1130,220 Z
-      M1180,220 L1180,140 Q1180,128 1193,128 Q1206,128 1206,140 L1206,110 Q1206,98 1220,98 Q1234,98 1234,110 L1234,90 Q1234,78 1248,78 Q1262,78 1262,90 L1262,160 L1280,160 L1280,220 Z
-      M1320,220 L1320,145 Q1320,135 1330,135 Q1340,135 1340,145 L1340,115 Q1340,103 1353,103 Q1366,103 1366,115 L1366,160 L1400,160 L1400,220 Z
-      M1440,220 L1440,160 L1440,220 Z"
-      fill="rgba(15,8,28,0.85)"/>
-    </svg>
-  </div>
-
-  <div class="hero-content">
+<div class="hero-content">
     <div class="hero-badge">🏜️ Handcrafted in Arizona since 2014</div>
     <h1>Where Every Flame<br>Tells a <em>Story</em></h1>
     <p class="hero-sub">Premium parasoy & soy wax candles — hand-poured with love in the Arizona desert</p>
