@@ -4,154 +4,154 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Candle Bunkhouse — Hand-Poured Candles from Arizona</title>
-<meta name="description" content="Hand-poured parasoy and soy wax candles made in Saint David, Arizona. Highly scented, non-toxic, and crafted with love by Raquel Thompson White. Shop online.">
+<meta name="description" content="Hand-poured parasoy and soy wax candles crafted in Saint David, Arizona by Raquel Thompson White. Highly scented, non-toxic, fast shipping. Shop online.">
+<meta property="og:title" content="The Candle Bunkhouse — Hand-Poured Arizona Candles">
+<meta property="og:description" content="Premium parasoy candles hand-poured with love in Saint David, AZ. 503 happy customers. 5-star rated.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-/* ============================================================
-   RESET & BASE
-============================================================ */
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; font-size: 16px; }
-body {
-  font-family: 'Lato', sans-serif;
-  background: #FAF7F2;
-  color: #2C1A0E;
-  overflow-x: hidden;
-  line-height: 1.6;
-}
-img { display: block; max-width: 100%; }
-a { text-decoration: none; color: inherit; }
-button { cursor: pointer; font-family: inherit; }
-
-/* ============================================================
-   CSS VARIABLES
-============================================================ */
+/* =============================================
+   ARIZONA SUNSET PALETTE
+   Sky: deep violet-indigo top
+   Mid: burning coral-orange
+   Horizon: gold & amber
+   Desert floor: warm sand & terracotta
+   Accent: hot magenta/pink highlight
+============================================= */
 :root {
-  --cream: #FAF7F2;
-  --warm: #F5EDE0;
-  --warm2: #EDE0CF;
-  --amber: #C8862A;
-  --amber-light: #E8A84A;
-  --amber-dark: #9B6519;
-  --gold: #F0C875;
-  --brown: #4A2E1A;
-  --brown-mid: #6B3E22;
-  --brown-light: #7A5035;
-  --sage: #8B9E7A;
-  --sage-light: #B5C4A8;
-  --text: #2C1A0E;
-  --muted: #7A6555;
-  --faint: #B0A090;
-  --white: #FFFFFF;
-  --border: #E8D9C5;
-  --border-dark: #C8B89A;
-  --shadow-sm: 0 2px 12px rgba(74,46,26,0.08);
-  --shadow-md: 0 8px 32px rgba(74,46,26,0.12);
-  --shadow-lg: 0 20px 60px rgba(74,46,26,0.18);
-  --radius: 8px;
-  --radius-lg: 12px;
-  --transition: 0.22s ease;
+  /* Sunset colors */
+  --sky:        #1A1035;
+  --twilight:   #2D1B5E;
+  --violet:     #5C2D7A;
+  --coral:      #D94F2B;
+  --sunset:     #E8732A;
+  --amber:      #F0A020;
+  --gold:       #F5C842;
+  --horizon:    #F7D98B;
+  --pink:       #C8305A;
+  --magenta:    #9B1F5E;
+
+  /* Desert neutrals */
+  --sand:       #F9F0E3;
+  --sand-dark:  #F0E4CC;
+  --terracotta: #C46B3A;
+  --clay:       #8B4A2A;
+  --dusk:       #2C1F3A;
+
+  /* Text */
+  --text:       #1C1015;
+  --muted:      #6B4F3A;
+  --faint:      #A8896C;
+  --white:      #FFFFFF;
+  --border:     #E8D5B8;
+
+  /* Functional */
+  --radius:     8px;
+  --radius-lg:  14px;
+  --shadow-sm:  0 2px 12px rgba(26,16,53,0.1);
+  --shadow-md:  0 8px 32px rgba(26,16,53,0.15);
+  --shadow-lg:  0 20px 60px rgba(26,16,53,0.22);
+  --t:          0.22s ease;
 }
 
-/* ============================================================
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family:'Jost', sans-serif;
+  background: var(--sand);
+  color: var(--text);
+  overflow-x: hidden;
+  line-height: 1.65;
+}
+img { display:block; max-width:100%; }
+a { text-decoration:none; color:inherit; }
+button { cursor:pointer; font-family:inherit; }
+input, textarea, select { font-family:inherit; }
+
+/* =============================================
    ANNOUNCEMENT BAR
-============================================================ */
-.announcement-bar {
-  background: var(--amber);
+============================================= */
+.bar {
+  background: linear-gradient(90deg, var(--coral) 0%, var(--sunset) 50%, var(--amber) 100%);
   color: var(--white);
   text-align: center;
   padding: 0.55rem 1rem;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.07em;
-  position: relative;
-  z-index: 200;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
 }
-.announcement-bar span { opacity: 0.75; margin: 0 1rem; }
+.bar span { opacity:0.7; margin:0 0.75rem; }
 
-/* ============================================================
+/* =============================================
    NAVIGATION
-============================================================ */
+============================================= */
 nav {
-  background: var(--white);
-  border-bottom: 1px solid var(--border);
+  background: rgba(28, 16, 21, 0.97);
+  backdrop-filter: blur(12px);
   position: sticky;
   top: 0;
-  z-index: 150;
-  box-shadow: var(--shadow-sm);
+  z-index: 200;
+  border-bottom: 1px solid rgba(240,160,32,0.2);
 }
 .nav-inner {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
-  height: 68px;
+  height: 66px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
 }
 .nav-brand {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--brown);
-  letter-spacing: 0.01em;
-  white-space: nowrap;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 0.02em;
   flex-shrink: 0;
 }
-.nav-brand em { color: var(--amber); font-style: normal; }
-.nav-links {
+.nav-brand em { color: var(--gold); font-style: normal; }
+.nav-links { display:flex; gap:2rem; list-style:none; }
+.nav-links a {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  transition: color var(--t);
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+.nav-links a:hover { color: var(--gold); border-bottom-color: var(--gold); }
+.nav-right { display:flex; align-items:center; gap:0.75rem; }
+.cart-btn {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  list-style: none;
-}
-.nav-links a {
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-  transition: color var(--transition);
-  padding: 0.25rem 0;
-  border-bottom: 2px solid transparent;
-}
-.nav-links a:hover { color: var(--amber); border-bottom-color: var(--amber); }
-.nav-actions { display: flex; align-items: center; gap: 0.75rem; }
-.cart-btn {
-  background: var(--brown);
+  gap: 0.45rem;
+  background: var(--coral);
   color: var(--white);
   border: none;
   border-radius: var(--radius);
-  padding: 0.55rem 1.1rem;
-  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.06em;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  transition: background var(--transition);
-  position: relative;
+  transition: background var(--t);
 }
-.cart-btn:hover { background: var(--amber); }
+.cart-btn:hover { background: var(--sunset); }
 .cart-count {
   background: var(--gold);
-  color: var(--brown);
+  color: var(--dusk);
   border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  font-size: 0.68rem;
+  width: 18px; height: 18px;
+  font-size: 0.65rem;
   font-weight: 900;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 0.2rem;
+  display: flex; align-items:center; justify-content:center;
 }
-.cart-count.hidden { display: none; }
-
-/* Mobile menu toggle */
+.cart-count.hidden { display:none; }
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -162,71 +162,112 @@ nav {
 }
 .menu-toggle span {
   display: block;
-  width: 22px;
-  height: 2px;
-  background: var(--brown);
+  width: 22px; height: 2px;
+  background: rgba(255,255,255,0.7);
   border-radius: 2px;
   transition: all 0.3s;
 }
 
-/* ============================================================
-   HERO
-============================================================ */
+/* =============================================
+   HERO — full Arizona sunset SVG sky
+============================================= */
 .hero {
-  background: var(--brown);
-  background-image:
-    radial-gradient(ellipse at 20% 50%, rgba(200,134,42,0.25) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 20%, rgba(122,80,53,0.3) 0%, transparent 50%);
-  color: var(--white);
-  padding: 5.5rem 2rem 6rem;
   position: relative;
   overflow: hidden;
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 5rem 2rem 4rem;
 }
-.hero::before {
-  content: '';
+.hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Cpath d='M40 40c0-11 9-20 20-20s20 9 20 20-9 20-20 20-20-9-20-20zm-40 0c0-11 9-20 20-20s20 9 20 20-9 20-20 20S0 51 0 40z'/%3E%3C/g%3E%3C/svg%3E");
+  background: linear-gradient(
+    180deg,
+    #0D0820 0%,
+    #1A1035 8%,
+    #2D1B5E 18%,
+    #5C2D7A 28%,
+    #9B2B5A 36%,
+    #C8305A 42%,
+    #D94F2B 50%,
+    #E8732A 58%,
+    #F0A020 66%,
+    #F5C842 75%,
+    #F7D98B 83%,
+    #F9F0E3 92%,
+    #F0E4CC 100%
+  );
+  z-index: 0;
+}
+/* Stars in upper portion */
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 35%;
+  background-image:
+    radial-gradient(1px 1px at 10% 15%, rgba(255,255,255,0.9) 0%, transparent 100%),
+    radial-gradient(1px 1px at 25% 8%, rgba(255,255,255,0.7) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 40% 20%, rgba(255,255,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 55% 12%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(1px 1px at 70% 5%, rgba(255,255,255,0.9) 0%, transparent 100%),
+    radial-gradient(1px 1px at 85% 18%, rgba(255,255,255,0.7) 0%, transparent 100%),
+    radial-gradient(1px 1px at 15% 28%, rgba(255,255,255,0.5) 0%, transparent 100%),
+    radial-gradient(1px 1px at 60% 25%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(1px 1px at 90% 10%, rgba(255,255,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 5% 5%, rgba(255,255,255,0.9) 0%, transparent 100%),
+    radial-gradient(1px 1px at 78% 28%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(1px 1px at 48% 6%, rgba(255,255,255,0.7) 0%, transparent 100%);
+}
+/* Saguaro silhouette SVG at bottom */
+.hero-saguaro {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  z-index: 1;
   pointer-events: none;
 }
+.hero-content { position:relative; z-index:2; max-width:740px; }
 .hero-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: rgba(240,200,117,0.15);
-  border: 1px solid rgba(240,200,117,0.35);
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
   border-radius: 30px;
-  padding: 0.35rem 1rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  padding: 0.35rem 1.1rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--horizon);
   margin-bottom: 1.5rem;
+  backdrop-filter: blur(4px);
 }
 .hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2.2rem, 5vw, 3.8rem);
-  font-weight: 400;
-  line-height: 1.15;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--white);
   margin-bottom: 1rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
 }
 .hero h1 em { font-style: italic; color: var(--gold); }
 .hero-sub {
   font-size: 1.05rem;
   font-weight: 300;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.82);
   margin-bottom: 0.5rem;
   letter-spacing: 0.03em;
 }
-.hero-tagline {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
+.hero-tags {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.4);
   margin-bottom: 2.5rem;
@@ -234,134 +275,109 @@ nav {
 .hero-stats {
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  gap: 2.5rem;
   margin-bottom: 2.75rem;
   flex-wrap: wrap;
 }
-.hero-stat .num {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
+.hero-stat .n {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.4rem;
   font-weight: 700;
   color: var(--gold);
   line-height: 1;
+  text-shadow: 0 0 30px rgba(245,200,66,0.4);
 }
-.hero-stat .lbl {
-  font-size: 0.72rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
+.hero-stat .l {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.45);
   margin-top: 0.3rem;
 }
-.hero-btns {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.btn-gold {
-  background: var(--gold);
-  color: var(--brown);
+.hero-btns { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+.btn-sunset {
+  background: linear-gradient(135deg, var(--coral), var(--amber));
+  color: var(--white);
   border: none;
   border-radius: var(--radius);
-  padding: 0.9rem 2.2rem;
-  font-size: 0.9rem;
-  font-weight: 900;
-  letter-spacing: 0.06em;
+  padding: 0.95rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  transition: all var(--transition);
-  box-shadow: 0 4px 16px rgba(240,200,117,0.3);
+  transition: all var(--t);
+  box-shadow: 0 4px 20px rgba(217,79,43,0.4);
 }
-.btn-gold:hover { background: var(--white); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(240,200,117,0.4); }
-.btn-ghost {
+.btn-sunset:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(217,79,43,0.5); }
+.btn-ghost-white {
   background: transparent;
   color: var(--white);
-  border: 2px solid rgba(255,255,255,0.3);
+  border: 2px solid rgba(255,255,255,0.35);
   border-radius: var(--radius);
-  padding: 0.9rem 2.2rem;
-  font-size: 0.9rem;
+  padding: 0.95rem 2.25rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  transition: all var(--transition);
+  transition: all var(--t);
 }
-.btn-ghost:hover { border-color: var(--white); background: rgba(255,255,255,0.1); }
-.hero-scroll-hint {
-  margin-top: 3.5rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-.hero-scroll-hint::before, .hero-scroll-hint::after {
-  content: '';
-  width: 30px;
-  height: 1px;
-  background: rgba(255,255,255,0.2);
-}
+.btn-ghost-white:hover { border-color:var(--white); background:rgba(255,255,255,0.1); }
 
-/* ============================================================
-   SECTION SHARED
-============================================================ */
-.section-wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-.section-label {
-  font-size: 0.72rem;
+/* =============================================
+   SECTION WRAPPER & LABELS
+============================================= */
+.wrap { max-width:1200px; margin:0 auto; padding:0 2rem; }
+.sec-label {
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--amber);
+  color: var(--coral);
   margin-bottom: 0.5rem;
 }
-.section-title {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(1.7rem, 3vw, 2.4rem);
-  font-weight: 400;
-  color: var(--brown);
+.sec-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 600;
+  color: var(--dusk);
   margin-bottom: 0.75rem;
-  line-height: 1.2;
+  line-height: 1.15;
 }
-.section-sub {
+.sec-sub {
   color: var(--muted);
-  font-size: 0.95rem;
-  line-height: 1.8;
+  font-size: 0.92rem;
+  line-height: 1.85;
   max-width: 540px;
 }
-.section-header { margin-bottom: 2.75rem; }
+.sec-hdr { margin-bottom:2.75rem; }
 
-/* ============================================================
+/* =============================================
    SHOP SECTION
-============================================================ */
-#shop { background: var(--white); padding: 5rem 0; }
-.filter-row {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin-bottom: 2.25rem;
-}
-.filter-btn {
-  padding: 0.45rem 1.1rem;
+============================================= */
+#shop { background:var(--white); padding:5rem 0; }
+.filter-row { display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:2.25rem; }
+.fbtn {
+  padding: 0.42rem 1.1rem;
   border-radius: 24px;
   border: 1.5px solid var(--border);
   background: transparent;
-  font-size: 0.78rem;
-  font-weight: 700;
+  font-size: 0.76rem;
+  font-weight: 600;
   color: var(--muted);
   letter-spacing: 0.05em;
-  transition: all var(--transition);
+  transition: all var(--t);
 }
-.filter-btn:hover { border-color: var(--amber); color: var(--amber); }
-.filter-btn.active { background: var(--amber); border-color: var(--amber); color: var(--white); }
-.products-grid {
+.fbtn:hover { border-color:var(--coral); color:var(--coral); }
+.fbtn.active { background:var(--coral); border-color:var(--coral); color:var(--white); }
+
+.pgrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   gap: 1.5rem;
 }
-.product-card {
-  background: var(--cream);
+.pcard {
+  background: var(--sand);
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
   overflow: hidden;
@@ -370,903 +386,645 @@ nav {
   display: flex;
   flex-direction: column;
 }
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--amber-light);
-}
-.product-thumb {
+.pcard:hover { transform:translateY(-5px); box-shadow:var(--shadow-md); border-color:var(--sunset); }
+.pthumb {
   width: 100%;
   aspect-ratio: 1;
-  background: var(--warm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3.5rem;
-  position: relative;
   overflow: hidden;
+  position: relative;
+  background: var(--sand-dark);
 }
-.product-thumb::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.15), transparent 60%);
+.pthumb img {
+  width:100%; height:100%;
+  object-fit:cover;
+  transition: transform 0.5s ease;
 }
-.product-badges {
-  position: absolute;
-  top: 0.6rem;
-  left: 0.6rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  z-index: 1;
+.pcard:hover .pthumb img { transform:scale(1.06); }
+.pthumb-emoji {
+  width:100%; aspect-ratio:1;
+  display:flex; align-items:center; justify-content:center;
+  font-size:3.5rem;
+  background:var(--sand-dark);
+}
+.pbadges {
+  position:absolute; top:0.6rem; left:0.6rem;
+  display:flex; flex-direction:column; gap:0.3rem; z-index:1;
 }
 .badge {
-  display: inline-block;
-  padding: 0.2rem 0.55rem;
-  border-radius: 3px;
-  font-size: 0.65rem;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  display:inline-block;
+  padding:0.18rem 0.55rem;
+  border-radius:3px;
+  font-size:0.63rem;
+  font-weight:700;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
 }
-.badge-bestseller { background: #FEF3C7; color: #92400E; }
-.badge-new { background: #D1FAE5; color: #065F46; }
-.product-body { padding: 1rem 1rem 1.1rem; display: flex; flex-direction: column; flex: 1; }
-.product-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--brown);
-  margin-bottom: 0.3rem;
-  line-height: 1.3;
-}
-.product-size {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--faint);
-  margin-bottom: 0.4rem;
-}
-.product-scent {
-  font-size: 0.8rem;
-  color: var(--muted);
-  line-height: 1.5;
-  margin-bottom: 0.8rem;
-  flex: 1;
-}
-.product-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  margin-top: auto;
-}
-.product-price {
-  font-size: 1.15rem;
-  font-weight: 900;
-  color: var(--amber-dark);
-}
+.badge-bs { background:#FEF3C7; color:#92400E; }
+.badge-new { background:#FCE4E4; color:#8B1A1A; }
+.pbody { padding:0.9rem 1rem 1.1rem; display:flex; flex-direction:column; flex:1; }
+.psize { font-size:0.68rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--faint); margin-bottom:0.3rem; }
+.pname { font-family:'Cormorant Garamond',serif; font-size:1.05rem; font-weight:600; color:var(--dusk); margin-bottom:0.3rem; line-height:1.25; }
+.pscent { font-size:0.78rem; color:var(--muted); line-height:1.55; margin-bottom:0.8rem; flex:1; }
+.pfoot { display:flex; align-items:center; justify-content:space-between; gap:0.5rem; margin-top:auto; }
+.pprice { font-family:'Cormorant Garamond',serif; font-size:1.25rem; font-weight:700; color:var(--coral); }
 .btn-add {
-  background: var(--brown);
+  background: var(--dusk);
   color: var(--white);
   border: none;
   border-radius: var(--radius);
-  padding: 0.45rem 0.9rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  transition: background var(--transition);
+  padding: 0.42rem 0.9rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: background var(--t);
   white-space: nowrap;
 }
-.btn-add:hover { background: var(--amber); }
+.btn-add:hover { background:var(--coral); }
 
-/* ============================================================
+/* =============================================
    FEATURES STRIP
-============================================================ */
+============================================= */
 #features {
-  background: var(--brown);
-  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--dusk) 0%, var(--twilight) 50%, var(--violet) 100%);
+  padding: 4.5rem 0;
 }
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
-}
-.feature-card {
+.fgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:1.5rem; }
+.fcard {
   background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(245,200,66,0.15);
   border-radius: var(--radius-lg);
   padding: 1.75rem 1.25rem;
   text-align: center;
-  transition: background var(--transition);
+  transition: all var(--t);
 }
-.feature-card:hover { background: rgba(255,255,255,0.1); }
-.feature-icon { font-size: 2.2rem; margin-bottom: 0.75rem; }
-.feature-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--gold);
-  margin-bottom: 0.5rem;
-}
-.feature-text { font-size: 0.82rem; color: rgba(255,255,255,0.58); line-height: 1.75; }
+.fcard:hover { background:rgba(245,200,66,0.08); border-color:rgba(245,200,66,0.3); }
+.ficon { font-size:2.2rem; margin-bottom:0.75rem; }
+.ftitle { font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:600; color:var(--gold); margin-bottom:0.5rem; }
+.ftext { font-size:0.82rem; color:rgba(255,255,255,0.55); line-height:1.75; }
 
-/* ============================================================
-   ABOUT
-============================================================ */
-#about {
-  background: var(--warm);
-  padding: 5rem 0;
-}
+/* =============================================
+   ABOUT / MEET RAQUEL
+============================================= */
+#about { background:var(--sand); padding:5.5rem 0; }
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
   align-items: center;
 }
-.about-eyebrow {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--amber);
-  margin-bottom: 0.5rem;
-}
-.about-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
-  font-weight: 400;
-  color: var(--brown);
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
-}
-.about-quote {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
-  font-style: italic;
-  color: var(--brown-light);
-  line-height: 1.65;
-  padding-left: 1.25rem;
-  border-left: 3px solid var(--amber);
-  margin-bottom: 1.5rem;
-}
-.about-text {
-  color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.9;
-}
-.about-text + .about-text { margin-top: 1rem; }
-.about-visual {
-  background: var(--brown);
-  border-radius: var(--radius-lg);
-  padding: 3rem 2rem;
-  color: var(--white);
-  text-align: center;
-}
-.about-stat-big {
-  font-family: 'Playfair Display', serif;
-  font-size: 4rem;
-  font-weight: 700;
-  color: var(--gold);
-  line-height: 1;
-}
-.about-stat-label {
-  font-size: 0.72rem;
-  font-weight: 300;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.45);
-  margin-top: 0.3rem;
-  margin-bottom: 2rem;
-}
-.about-divider { width: 40px; height: 1px; background: rgba(255,255,255,0.2); margin: 1.75rem auto; }
-.about-name {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 1.05rem;
-  color: var(--gold);
-}
-.about-loc {
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.4);
-  margin-top: 0.3rem;
-}
-.about-socials {
-  margin-top: 2rem;
-  display: flex;
-  gap: 0.75rem;
-  justify-content: center;
-}
-.social-pill {
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.15);
-  color: rgba(255,255,255,0.75);
-  border-radius: 30px;
-  padding: 0.4rem 1rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  transition: all var(--transition);
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-.social-pill:hover { background: var(--amber); border-color: var(--amber); color: var(--white); }
-
-/* ============================================================
-   REVIEWS
-============================================================ */
-#reviews { background: var(--white); padding: 5rem 0; }
-.rating-summary {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 2.75rem;
-  padding: 1.5rem 2rem;
-  background: var(--cream);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border);
-}
-.rating-big {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: var(--brown);
-  line-height: 1;
-}
-.rating-stars { font-size: 1.4rem; color: var(--amber); letter-spacing: 2px; }
-.rating-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.25rem; }
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-  gap: 1.5rem;
-}
-.review-card {
-  background: var(--cream);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 1.4rem;
-}
-.review-stars { color: var(--amber); font-size: 0.85rem; letter-spacing: 3px; margin-bottom: 0.65rem; }
-.review-text {
-  font-size: 0.88rem;
-  color: var(--muted);
-  line-height: 1.75;
-  font-style: italic;
-  margin-bottom: 0.9rem;
-}
-.review-author { font-size: 0.8rem; font-weight: 700; color: var(--brown); }
-.review-date { font-size: 0.72rem; color: var(--faint); margin-top: 0.2rem; }
-.review-product {
-  margin-top: 0.75rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--border);
-  font-size: 0.72rem;
-  color: var(--muted);
-  font-style: italic;
-}
-
-/* ============================================================
-   NEWSLETTER / CTA STRIP
-============================================================ */
-#cta {
-  background: linear-gradient(135deg, var(--amber) 0%, var(--amber-dark) 100%);
-  padding: 4.5rem 2rem;
-  text-align: center;
-}
-#cta h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--white);
-  margin-bottom: 0.75rem;
-}
-#cta p { color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 2rem; }
-.newsletter-form {
-  display: flex;
-  gap: 0.5rem;
-  max-width: 440px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.newsletter-form input {
-  flex: 1;
-  min-width: 200px;
-  padding: 0.85rem 1.25rem;
-  border: none;
-  border-radius: var(--radius);
-  font-size: 0.9rem;
-  font-family: inherit;
-  outline: none;
-  background: var(--white);
-  color: var(--text);
-}
-.newsletter-form button {
-  background: var(--brown);
-  color: var(--white);
-  border: none;
-  border-radius: var(--radius);
-  padding: 0.85rem 1.5rem;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  transition: background var(--transition);
-}
-.newsletter-form button:hover { background: #2C1A0E; }
-.newsletter-note { font-size: 0.72rem; color: rgba(255,255,255,0.55); margin-top: 0.75rem; }
-
-/* ============================================================
-   CONTACT
-============================================================ */
-#contact { background: var(--warm); padding: 5rem 0; }
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: start;
-}
-.contact-form-wrap {
-  background: var(--white);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border);
-  padding: 2.25rem;
-}
-.contact-form-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
-  color: var(--brown);
-  margin-bottom: 1.5rem;
-}
-.form-group { margin-bottom: 1.1rem; }
-.form-label {
-  display: block;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 0.4rem;
-}
-.form-input {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border: 1.5px solid var(--border);
-  border-radius: var(--radius);
-  font-size: 0.9rem;
-  font-family: inherit;
-  color: var(--text);
-  background: var(--cream);
-  outline: none;
-  transition: border-color var(--transition);
-}
-.form-input:focus { border-color: var(--amber); background: var(--white); }
-textarea.form-input { resize: vertical; min-height: 130px; }
-.btn-submit {
-  width: 100%;
-  background: var(--amber);
-  color: var(--white);
-  border: none;
-  border-radius: var(--radius);
-  padding: 0.9rem;
-  font-size: 0.9rem;
-  font-weight: 900;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  transition: background var(--transition);
-  margin-top: 0.5rem;
-}
-.btn-submit:hover { background: var(--amber-dark); }
-.contact-info-side { padding-top: 0.5rem; }
-.contact-info-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  color: var(--brown);
-  margin-bottom: 0.75rem;
-}
-.contact-info-text { color: var(--muted); font-size: 0.92rem; line-height: 1.8; margin-bottom: 2rem; }
-.contact-links { display: flex; flex-direction: column; gap: 0.75rem; }
-.contact-link-item {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.85rem 1.1rem;
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: var(--brown);
-  transition: all var(--transition);
-}
-.contact-link-item:hover {
-  background: var(--amber);
-  color: var(--white);
-  border-color: var(--amber);
-  transform: translateX(4px);
-}
-.contact-link-icon { font-size: 1.2rem; flex-shrink: 0; }
-.contact-link-label { font-size: 0.72rem; font-weight: 400; color: inherit; opacity: 0.7; display: block; margin-top: 0.1rem; }
-
-/* ============================================================
-   FOOTER
-============================================================ */
-footer {
-  background: var(--text);
-  color: rgba(255,255,255,0.45);
-  padding: 3.5rem 2rem 2rem;
-}
-.footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.footer-top {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 3rem;
-  padding-bottom: 2.5rem;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  margin-bottom: 2rem;
-}
-.footer-brand {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.35rem;
-  color: rgba(255,255,255,0.9);
-  margin-bottom: 0.75rem;
-}
-.footer-brand em { color: var(--gold); font-style: normal; }
-.footer-tagline { font-size: 0.82rem; line-height: 1.8; color: rgba(255,255,255,0.4); max-width: 280px; }
-.footer-col-title {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.6);
-  margin-bottom: 1rem;
-}
-.footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
-.footer-links a {
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.38);
-  transition: color var(--transition);
-}
-.footer-links a:hover { color: var(--gold); }
-.footer-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 0.75rem;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.footer-legal { color: rgba(255,255,255,0.25); }
-
-/* ============================================================
-   CART DRAWER
-============================================================ */
-.cart-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.45);
-  z-index: 300;
-}
-.cart-overlay.open { display: block; }
-.cart-drawer {
-  position: fixed;
-  top: 0;
-  right: -480px;
-  width: 100%;
-  max-width: 420px;
-  height: 100vh;
-  background: var(--white);
-  z-index: 310;
-  display: flex;
-  flex-direction: column;
-  box-shadow: -8px 0 40px rgba(0,0,0,0.18);
-  transition: right 0.35s cubic-bezier(0.4,0,0.2,1);
-  overflow: hidden;
-}
-.cart-drawer.open { right: 0; }
-.cart-header {
-  padding: 1.5rem;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-shrink: 0;
-}
-.cart-header h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
-  color: var(--brown);
-}
-.cart-close {
-  background: none;
-  border: none;
-  font-size: 1.4rem;
-  color: var(--muted);
-  padding: 0.25rem;
-  border-radius: 4px;
-  transition: color var(--transition);
-}
-.cart-close:hover { color: var(--brown); }
-.cart-items {
-  flex: 1;
-  overflow-y: auto;
-  padding: 1.25rem 1.5rem;
-}
-.cart-empty {
-  text-align: center;
-  padding: 3rem 1rem;
-}
-.cart-empty .empty-icon { font-size: 3rem; margin-bottom: 1rem; opacity: 0.4; }
-.cart-empty p { color: var(--muted); font-size: 0.9rem; }
-.cart-item {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--border);
-}
-.cart-item:last-child { border-bottom: none; }
-.cart-item-emoji {
-  width: 60px;
-  height: 60px;
-  background: var(--warm);
-  border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.75rem;
-  flex-shrink: 0;
-  border: 1px solid var(--border);
-}
-.cart-item-info { flex: 1; min-width: 0; }
-.cart-item-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--brown);
-  margin-bottom: 0.2rem;
-  line-height: 1.3;
-}
-.cart-item-size { font-size: 0.72rem; color: var(--faint); letter-spacing: 0.06em; text-transform: uppercase; }
-.cart-item-controls {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 0.6rem;
-}
-.qty-btn {
-  width: 26px;
-  height: 26px;
-  border: 1.5px solid var(--border);
-  background: var(--cream);
-  border-radius: 4px;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: var(--brown);
-  transition: all var(--transition);
-  line-height: 1;
-  padding-bottom: 1px;
-}
-.qty-btn:hover { background: var(--amber); color: var(--white); border-color: var(--amber); }
-.qty-num { font-size: 0.9rem; font-weight: 700; color: var(--brown); min-width: 20px; text-align: center; }
-.remove-btn {
-  background: none;
-  border: none;
-  color: var(--faint);
-  font-size: 0.75rem;
-  padding: 0.15rem 0.4rem;
-  margin-left: 0.5rem;
-  transition: color var(--transition);
-  border-radius: 3px;
-}
-.remove-btn:hover { color: #C0392B; }
-.cart-item-price {
-  font-size: 1rem;
-  font-weight: 900;
-  color: var(--amber-dark);
-  text-align: right;
-  flex-shrink: 0;
-  padding-top: 2px;
-}
-.cart-footer {
-  padding: 1.25rem 1.5rem;
-  border-top: 1px solid var(--border);
-  background: var(--cream);
-  flex-shrink: 0;
-}
-.cart-subtotal {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
-}
-.cart-subtotal .label { font-size: 0.82rem; color: var(--muted); font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
-.cart-subtotal .amount { font-size: 1.4rem; font-weight: 900; color: var(--brown); font-family: 'Playfair Display', serif; }
-.cart-shipping-note { font-size: 0.75rem; color: var(--sage); font-weight: 700; margin-bottom: 1rem; }
-.btn-checkout {
-  width: 100%;
-  background: var(--amber);
-  color: var(--white);
-  border: none;
-  border-radius: var(--radius);
-  padding: 1rem;
-  font-size: 0.9rem;
-  font-weight: 900;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  transition: background var(--transition);
-  margin-bottom: 0.6rem;
-}
-.btn-checkout:hover { background: var(--amber-dark); }
-.btn-continue {
-  width: 100%;
-  background: transparent;
-  color: var(--muted);
-  border: 1.5px solid var(--border);
-  border-radius: var(--radius);
-  padding: 0.75rem;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  transition: all var(--transition);
-}
-.btn-continue:hover { border-color: var(--brown); color: var(--brown); }
-.stripe-note {
-  text-align: center;
-  font-size: 0.72rem;
-  color: var(--faint);
-  margin-top: 0.75rem;
-}
-
-/* ============================================================
-   PRODUCT MODAL
-============================================================ */
-.modal-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(44,26,14,0.55);
-  z-index: 400;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem;
-  backdrop-filter: blur(2px);
-}
-.modal-overlay.open { display: flex; }
-.modal {
-  background: var(--white);
-  border-radius: var(--radius-lg);
-  max-width: 600px;
-  width: 100%;
-  max-height: 90vh;
-  overflow-y: auto;
-  box-shadow: var(--shadow-lg);
-  animation: modalIn 0.25s ease;
+.about-img-wrap {
   position: relative;
 }
-@keyframes modalIn { from { opacity: 0; transform: scale(0.95) translateY(10px); } to { opacity: 1; transform: none; } }
-.modal-close {
+.about-img-frame {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4/5;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+}
+.about-img-frame img {
+  width:100%; height:100%;
+  object-fit:cover;
+  object-position:top center;
+}
+.about-img-overlay {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: var(--cream);
-  border: 1px solid var(--border);
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(26,16,53,0.6) 100%);
+}
+.about-img-badge {
+  position: absolute;
+  bottom: -1.5rem;
+  right: -1.5rem;
+  background: linear-gradient(135deg, var(--coral), var(--amber));
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 110px; height: 110px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
-  color: var(--muted);
-  z-index: 1;
-  transition: all var(--transition);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  border: 4px solid var(--white);
 }
-.modal-close:hover { background: var(--brown); color: var(--white); border-color: var(--brown); }
-.modal-thumb {
-  width: 100%;
-  aspect-ratio: 16/9;
-  background: var(--warm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 6rem;
-  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-}
-.modal-body { padding: 1.75rem; }
-.modal-badge-row { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; }
-.modal-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: var(--brown);
-  margin-bottom: 0.25rem;
-}
-.modal-size {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--faint);
-  margin-bottom: 0.75rem;
-}
-.modal-price-row { display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 1rem; }
-.modal-price {
-  font-size: 2rem;
-  font-weight: 900;
-  color: var(--amber-dark);
-  font-family: 'Playfair Display', serif;
-}
-.modal-scents {
-  background: var(--cream);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 0.75rem 1rem;
-  font-size: 0.82rem;
-  color: var(--brown-light);
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-.modal-scents span { font-weight: 400; color: var(--muted); margin-left: 0.25rem; }
-.modal-desc {
-  font-size: 0.9rem;
-  color: var(--muted);
-  line-height: 1.85;
+.about-img-badge .bn { font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:700; color:var(--white); line-height:1; }
+.about-img-badge .bl { font-size:0.6rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.8); margin-top:0.15rem; }
+.about-text-side {}
+.about-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--dusk);
+  line-height: 1.6;
+  padding-left: 1.5rem;
+  border-left: 3px solid var(--coral);
   margin-bottom: 1.5rem;
 }
-.modal-qty-row {
+.about-body { color:var(--muted); font-size:0.92rem; line-height:1.9; }
+.about-body + .about-body { margin-top:1rem; }
+.about-sig {
+  margin-top: 2rem;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 1.25rem;
+  gap: 1rem;
 }
-.modal-qty-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
-.modal-qty-ctrl {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  border: 1.5px solid var(--border);
+.about-sig-img {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--coral);
+  flex-shrink: 0;
+}
+.about-sig-img img { width:100%; height:100%; object-fit:cover; object-position:top; }
+.about-sig-name { font-family:'Cormorant Garamond',serif; font-size:1.05rem; font-weight:600; color:var(--dusk); }
+.about-sig-role { font-size:0.72rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--coral); margin-top:0.15rem; }
+.about-socials { margin-top:1.5rem; display:flex; gap:0.75rem; flex-wrap:wrap; }
+.social-btn {
+  display: flex; align-items: center; gap:0.4rem;
+  background: var(--sand-dark);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--dusk);
+  transition: all var(--t);
+}
+.social-btn:hover { background:var(--coral); color:var(--white); border-color:var(--coral); }
+
+/* =============================================
+   REVIEWS
+============================================= */
+#reviews { background:var(--white); padding:5rem 0; }
+.rating-bar {
+  display: flex; align-items: center; gap:1.5rem;
+  background: var(--sand);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 2rem;
+  margin-bottom: 2.75rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.rating-num { font-family:'Cormorant Garamond',serif; font-size:4rem; font-weight:700; color:var(--dusk); line-height:1; }
+.rating-stars { font-size:1.3rem; color:var(--amber); letter-spacing:3px; }
+.rating-meta { font-size:0.82rem; color:var(--muted); margin-top:0.25rem; }
+.rgrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1.5rem; }
+.rcard {
+  background:var(--sand);
+  border:1px solid var(--border);
+  border-radius:var(--radius-lg);
+  padding:1.4rem;
+}
+.rstars { color:var(--amber); font-size:0.85rem; letter-spacing:3px; margin-bottom:0.65rem; }
+.rtext { font-size:0.88rem; color:var(--muted); line-height:1.8; font-style:italic; margin-bottom:0.9rem; }
+.rauthor { font-size:0.8rem; font-weight:700; color:var(--dusk); }
+.rdate { font-size:0.7rem; color:var(--faint); margin-top:0.2rem; }
+.rprod { margin-top:0.75rem; padding-top:0.75rem; border-top:1px solid var(--border); font-size:0.7rem; color:var(--faint); }
+
+/* =============================================
+   CTA STRIP
+============================================= */
+#cta {
+  background: linear-gradient(135deg, var(--coral) 0%, var(--pink) 50%, var(--violet) 100%);
+  padding: 5rem 2rem;
+  text-align: center;
+  position: relative;
   overflow: hidden;
 }
-.modal-qty-ctrl button {
-  width: 36px;
-  height: 36px;
-  background: var(--cream);
-  border: none;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--brown);
-  transition: background var(--transition);
+#cta::before {
+  content:'';
+  position:absolute; inset:0;
+  background-image: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.05) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 50%, rgba(255,255,255,0.05) 0%, transparent 50%);
 }
-.modal-qty-ctrl button:hover { background: var(--amber); color: var(--white); }
-.modal-qty-ctrl input {
-  width: 48px;
-  height: 36px;
-  border: none;
-  border-left: 1.5px solid var(--border);
-  border-right: 1.5px solid var(--border);
-  text-align: center;
-  font-size: 0.95rem;
-  font-weight: 700;
-  font-family: inherit;
-  color: var(--brown);
-  background: var(--white);
-  outline: none;
+#cta h2 {
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.4rem;
+  font-weight:600;
+  color:var(--white);
+  margin-bottom:0.75rem;
+  position:relative;
+}
+#cta p { color:rgba(255,255,255,0.78); font-size:0.95rem; margin-bottom:2rem; position:relative; }
+.nl-form {
+  display:flex; gap:0.5rem; max-width:440px; margin:0 auto;
+  flex-wrap:wrap; justify-content:center; position:relative;
+}
+.nl-form input {
+  flex:1; min-width:200px;
+  padding:0.9rem 1.25rem;
+  border:none; border-radius:var(--radius);
+  font-size:0.9rem; outline:none;
+  background:rgba(255,255,255,0.95); color:var(--text);
+}
+.nl-form button {
+  background:var(--dusk); color:var(--white);
+  border:none; border-radius:var(--radius);
+  padding:0.9rem 1.5rem;
+  font-size:0.82rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase;
+  transition:background var(--t);
+}
+.nl-form button:hover { background:var(--text); }
+.nl-note { font-size:0.7rem; color:rgba(255,255,255,0.5); margin-top:0.75rem; position:relative; }
+
+/* =============================================
+   LEGAL PAGES (hidden by default, shown as overlays)
+============================================= */
+.legal-overlay {
+  display:none;
+  position:fixed; inset:0;
+  background:rgba(26,16,53,0.7);
+  z-index:500;
+  align-items:flex-start;
+  justify-content:center;
+  padding:2rem 1rem;
+  overflow-y:auto;
+  backdrop-filter:blur(4px);
+}
+.legal-overlay.open { display:flex; }
+.legal-box {
+  background:var(--white);
+  border-radius:var(--radius-lg);
+  max-width:720px; width:100%;
+  padding:2.5rem;
+  margin:auto;
+  position:relative;
+  box-shadow:var(--shadow-lg);
+}
+.legal-close {
+  position:absolute; top:1.25rem; right:1.25rem;
+  background:var(--sand); border:1px solid var(--border);
+  border-radius:50%; width:36px; height:36px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:1rem; color:var(--muted);
+  transition:all var(--t);
+}
+.legal-close:hover { background:var(--dusk); color:var(--white); border-color:var(--dusk); }
+.legal-box h2 {
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.8rem; font-weight:700; color:var(--dusk);
+  margin-bottom:0.5rem;
+}
+.legal-box .legal-date { font-size:0.75rem; color:var(--faint); margin-bottom:1.75rem; letter-spacing:0.05em; }
+.legal-box h3 { font-size:1rem; font-weight:700; color:var(--dusk); margin:1.5rem 0 0.5rem; }
+.legal-box p { font-size:0.88rem; color:var(--muted); line-height:1.85; margin-bottom:0.75rem; }
+.legal-box ul { padding-left:1.5rem; margin-bottom:0.75rem; }
+.legal-box ul li { font-size:0.88rem; color:var(--muted); line-height:1.85; margin-bottom:0.35rem; }
+.legal-box a { color:var(--coral); }
+
+/* =============================================
+   CONTACT
+============================================= */
+#contact { background:var(--sand); padding:5rem 0; }
+.cgrid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:4rem;
+  align-items:start;
+}
+.cform-wrap {
+  background:var(--white);
+  border-radius:var(--radius-lg);
+  border:1px solid var(--border);
+  padding:2.25rem;
+  box-shadow:var(--shadow-sm);
+}
+.cform-title { font-family:'Cormorant Garamond',serif; font-size:1.5rem; color:var(--dusk); margin-bottom:1.5rem; }
+.fg { margin-bottom:1.1rem; }
+.flabel {
+  display:block;
+  font-size:0.72rem; font-weight:700;
+  letter-spacing:0.08em; text-transform:uppercase;
+  color:var(--muted); margin-bottom:0.4rem;
+}
+.finput {
+  width:100%;
+  padding:0.75rem 1rem;
+  border:1.5px solid var(--border);
+  border-radius:var(--radius);
+  font-size:0.9rem; color:var(--text);
+  background:var(--sand);
+  outline:none;
+  transition:border-color var(--t), background var(--t);
+}
+.finput:focus { border-color:var(--coral); background:var(--white); }
+textarea.finput { resize:vertical; min-height:130px; }
+.btn-send {
+  width:100%;
+  background:linear-gradient(135deg,var(--coral),var(--amber));
+  color:var(--white); border:none;
+  border-radius:var(--radius);
+  padding:0.9rem;
+  font-size:0.88rem; font-weight:700;
+  letter-spacing:0.08em; text-transform:uppercase;
+  transition:all var(--t);
+  margin-top:0.5rem;
+  box-shadow:0 4px 16px rgba(217,79,43,0.3);
+}
+.btn-send:hover { transform:translateY(-1px); box-shadow:0 8px 24px rgba(217,79,43,0.4); }
+.cinfo-side {}
+.cinfo-title { font-family:'Cormorant Garamond',serif; font-size:2rem; color:var(--dusk); margin-bottom:0.75rem; }
+.cinfo-text { color:var(--muted); font-size:0.92rem; line-height:1.85; margin-bottom:2rem; }
+.clinks { display:flex; flex-direction:column; gap:0.75rem; }
+.clink {
+  display:flex; align-items:center; gap:0.85rem;
+  padding:0.85rem 1.1rem;
+  background:var(--white); border:1px solid var(--border);
+  border-radius:var(--radius);
+  font-size:0.88rem; font-weight:600; color:var(--dusk);
+  transition:all var(--t);
+}
+.clink:hover { background:var(--coral); color:var(--white); border-color:var(--coral); transform:translateX(4px); }
+.clink-icon { font-size:1.2rem; flex-shrink:0; }
+.clink-sub { font-size:0.7rem; font-weight:400; color:inherit; opacity:0.7; display:block; margin-top:0.1rem; }
+
+/* =============================================
+   FOOTER
+============================================= */
+footer {
+  background: linear-gradient(180deg, var(--dusk) 0%, var(--sky) 100%);
+  color: rgba(255,255,255,0.4);
+  padding:4rem 2rem 2rem;
+}
+.footer-inner { max-width:1200px; margin:0 auto; }
+.footer-top {
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:3rem;
+  padding-bottom:2.5rem;
+  border-bottom:1px solid rgba(255,255,255,0.07);
+  margin-bottom:2rem;
+}
+.footer-brand { font-family:'Cormorant Garamond',serif; font-size:1.5rem; color:rgba(255,255,255,0.9); margin-bottom:0.75rem; }
+.footer-brand em { color:var(--gold); font-style:normal; }
+.footer-tagline { font-size:0.82rem; line-height:1.8; color:rgba(255,255,255,0.38); max-width:260px; margin-bottom:1.25rem; }
+.footer-social { display:flex; gap:0.6rem; }
+.fsoc {
+  width:34px; height:34px;
+  background:rgba(255,255,255,0.07);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:var(--radius);
+  display:flex; align-items:center; justify-content:center;
+  font-size:1rem;
+  transition:all var(--t);
+}
+.fsoc:hover { background:var(--coral); border-color:var(--coral); }
+.footer-col-title {
+  font-size:0.68rem; font-weight:700;
+  letter-spacing:0.16em; text-transform:uppercase;
+  color:rgba(255,255,255,0.55);
+  margin-bottom:1rem;
+}
+.footer-links { list-style:none; display:flex; flex-direction:column; gap:0.5rem; }
+.footer-links a { font-size:0.83rem; color:rgba(255,255,255,0.35); transition:color var(--t); }
+.footer-links a:hover { color:var(--gold); }
+.footer-bottom {
+  display:flex; align-items:center; justify-content:space-between;
+  font-size:0.73rem; gap:1rem; flex-wrap:wrap;
+}
+.footer-legal { color:rgba(255,255,255,0.22); }
+.footer-legal a { color:rgba(255,255,255,0.4); transition:color var(--t); cursor:pointer; }
+.footer-legal a:hover { color:var(--gold); }
+
+/* =============================================
+   CART DRAWER
+============================================= */
+.cart-overlay {
+  display:none; position:fixed; inset:0;
+  background:rgba(26,16,53,0.5); z-index:300;
+}
+.cart-overlay.open { display:block; }
+.cart-drawer {
+  position:fixed; top:0; right:-440px;
+  width:100%; max-width:400px; height:100vh;
+  background:var(--white); z-index:310;
+  display:flex; flex-direction:column;
+  box-shadow:-8px 0 40px rgba(26,16,53,0.2);
+  transition:right 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+.cart-drawer.open { right:0; }
+.cart-hdr {
+  padding:1.5rem;
+  border-bottom:1px solid var(--border);
+  display:flex; align-items:center; justify-content:space-between;
+  flex-shrink:0;
+}
+.cart-hdr h2 { font-family:'Cormorant Garamond',serif; font-size:1.4rem; color:var(--dusk); }
+.cart-x { background:none; border:none; font-size:1.3rem; color:var(--muted); padding:0.25rem; border-radius:4px; transition:color var(--t); }
+.cart-x:hover { color:var(--coral); }
+.cart-items { flex:1; overflow-y:auto; padding:1.25rem 1.5rem; }
+.cart-empty { text-align:center; padding:3rem 1rem; }
+.cart-empty .ei { font-size:3rem; margin-bottom:1rem; opacity:0.35; }
+.cart-empty p { color:var(--muted); font-size:0.9rem; }
+.citem {
+  display:flex; gap:0.85rem; align-items:flex-start;
+  padding:1rem 0; border-bottom:1px solid var(--border);
+}
+.citem:last-child { border-bottom:none; }
+.citem-img {
+  width:58px; height:58px;
+  border-radius:var(--radius); overflow:hidden;
+  border:1px solid var(--border); flex-shrink:0;
+  background:var(--sand);
+}
+.citem-img img { width:100%; height:100%; object-fit:cover; }
+.citem-img-emoji { width:100%; height:100%; display:flex; align-items:center; justify-content:center; font-size:1.8rem; }
+.citem-info { flex:1; min-width:0; }
+.citem-name { font-family:'Cormorant Garamond',serif; font-size:0.95rem; font-weight:600; color:var(--dusk); margin-bottom:0.15rem; }
+.citem-size { font-size:0.68rem; color:var(--faint); letter-spacing:0.07em; text-transform:uppercase; }
+.citem-ctrl { display:flex; align-items:center; gap:0.4rem; margin-top:0.55rem; }
+.qbtn {
+  width:24px; height:24px;
+  border:1.5px solid var(--border); background:var(--sand);
+  border-radius:4px; font-size:1rem; font-weight:700; color:var(--dusk);
+  display:flex; align-items:center; justify-content:center;
+  transition:all var(--t); line-height:1;
+}
+.qbtn:hover { background:var(--coral); color:var(--white); border-color:var(--coral); }
+.qnum { font-size:0.88rem; font-weight:700; color:var(--dusk); min-width:18px; text-align:center; }
+.rm-btn { background:none; border:none; color:var(--faint); font-size:0.72rem; margin-left:0.4rem; transition:color var(--t); border-radius:3px; padding:0.1rem 0.35rem; }
+.rm-btn:hover { color:#C0392B; }
+.citem-price { font-family:'Cormorant Garamond',serif; font-size:1.05rem; font-weight:700; color:var(--coral); flex-shrink:0; padding-top:2px; }
+.cart-ftr {
+  padding:1.25rem 1.5rem;
+  border-top:1px solid var(--border);
+  background:var(--sand); flex-shrink:0;
+}
+.cart-sub { display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem; }
+.cart-sub .lbl { font-size:0.78rem; color:var(--muted); font-weight:700; letter-spacing:0.06em; text-transform:uppercase; }
+.cart-sub .amt { font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:700; color:var(--dusk); }
+.cart-ship { font-size:0.72rem; color:var(--coral); font-weight:700; margin-bottom:1rem; }
+.btn-checkout {
+  width:100%;
+  background:linear-gradient(135deg,var(--coral),var(--amber));
+  color:var(--white); border:none;
+  border-radius:var(--radius);
+  padding:0.95rem;
+  font-size:0.88rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase;
+  transition:all var(--t); margin-bottom:0.6rem;
+  box-shadow:0 4px 16px rgba(217,79,43,0.3);
+}
+.btn-checkout:hover { transform:translateY(-1px); box-shadow:0 8px 24px rgba(217,79,43,0.4); }
+.btn-cont {
+  width:100%; background:transparent; color:var(--muted);
+  border:1.5px solid var(--border); border-radius:var(--radius);
+  padding:0.72rem;
+  font-size:0.78rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase;
+  transition:all var(--t);
+}
+.btn-cont:hover { border-color:var(--dusk); color:var(--dusk); }
+.stripe-note { text-align:center; font-size:0.68rem; color:var(--faint); margin-top:0.75rem; }
+
+/* =============================================
+   PRODUCT MODAL
+============================================= */
+.modal-overlay {
+  display:none; position:fixed; inset:0;
+  background:rgba(26,16,53,0.6); z-index:400;
+  align-items:center; justify-content:center;
+  padding:1.5rem;
+  backdrop-filter:blur(4px);
+}
+.modal-overlay.open { display:flex; }
+.modal {
+  background:var(--white);
+  border-radius:var(--radius-lg);
+  max-width:580px; width:100%;
+  max-height:90vh; overflow-y:auto;
+  box-shadow:var(--shadow-lg);
+  animation:mIn 0.25s ease;
+  position:relative;
+}
+@keyframes mIn { from{opacity:0;transform:scale(0.95) translateY(10px)} to{opacity:1;transform:none} }
+.modal-x {
+  position:absolute; top:1rem; right:1rem;
+  background:rgba(255,255,255,0.9); border:1px solid var(--border);
+  border-radius:50%; width:36px; height:36px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:1rem; color:var(--muted); z-index:1;
+  transition:all var(--t);
+}
+.modal-x:hover { background:var(--dusk); color:var(--white); border-color:var(--dusk); }
+.modal-thumb {
+  width:100%; aspect-ratio:16/9;
+  overflow:hidden;
+  border-radius:var(--radius-lg) var(--radius-lg) 0 0;
+}
+.modal-thumb img { width:100%; height:100%; object-fit:cover; }
+.modal-thumb-emoji {
+  width:100%; aspect-ratio:16/9;
+  display:flex; align-items:center; justify-content:center;
+  font-size:6rem;
+  background:var(--sand-dark);
+  border-radius:var(--radius-lg) var(--radius-lg) 0 0;
+}
+.modal-body { padding:1.75rem; }
+.modal-badges { display:flex; gap:0.5rem; margin-bottom:0.75rem; }
+.modal-title { font-family:'Cormorant Garamond',serif; font-size:1.8rem; font-weight:600; color:var(--dusk); margin-bottom:0.2rem; }
+.modal-size { font-size:0.72rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--faint); margin-bottom:0.75rem; }
+.modal-price { font-family:'Cormorant Garamond',serif; font-size:2.2rem; font-weight:700; color:var(--coral); margin-bottom:1rem; }
+.modal-scents {
+  background:var(--sand); border:1px solid var(--border);
+  border-radius:var(--radius); padding:0.75rem 1rem;
+  font-size:0.82rem; color:var(--dusk); font-weight:600;
+  margin-bottom:1rem;
+}
+.modal-scents span { font-weight:400; color:var(--muted); margin-left:0.25rem; }
+.modal-desc { font-size:0.9rem; color:var(--muted); line-height:1.85; margin-bottom:1.5rem; }
+.modal-qrow { display:flex; align-items:center; gap:0.75rem; margin-bottom:1.25rem; }
+.modal-qlbl { font-size:0.75rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:var(--muted); }
+.modal-qctrl {
+  display:flex; align-items:center;
+  border:1.5px solid var(--border); border-radius:var(--radius); overflow:hidden;
+}
+.modal-qctrl button { width:36px; height:36px; background:var(--sand); border:none; font-size:1.1rem; font-weight:700; color:var(--dusk); transition:background var(--t); }
+.modal-qctrl button:hover { background:var(--coral); color:var(--white); }
+.modal-qctrl input {
+  width:46px; height:36px; border:none;
+  border-left:1.5px solid var(--border); border-right:1.5px solid var(--border);
+  text-align:center; font-size:0.95rem; font-weight:700;
+  color:var(--dusk); background:var(--white); outline:none;
 }
 .btn-modal-add {
-  width: 100%;
-  background: var(--amber);
-  color: var(--white);
-  border: none;
-  border-radius: var(--radius);
-  padding: 1rem;
-  font-size: 0.95rem;
-  font-weight: 900;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  transition: all var(--transition);
+  width:100%;
+  background:linear-gradient(135deg,var(--coral),var(--amber));
+  color:var(--white); border:none;
+  border-radius:var(--radius); padding:1rem;
+  font-size:0.9rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase;
+  transition:all var(--t);
+  box-shadow:0 4px 16px rgba(217,79,43,0.3);
 }
-.btn-modal-add:hover { background: var(--amber-dark); transform: translateY(-1px); }
-.modal-trust {
-  display: flex;
-  gap: 1.25rem;
-  margin-top: 1rem;
-  font-size: 0.75rem;
-  color: var(--faint);
-  justify-content: center;
-}
-.modal-trust span { display: flex; align-items: center; gap: 0.3rem; }
+.btn-modal-add:hover { transform:translateY(-1px); box-shadow:0 8px 24px rgba(217,79,43,0.4); }
+.modal-trust { display:flex; gap:1.5rem; margin-top:1rem; font-size:0.73rem; color:var(--faint); justify-content:center; flex-wrap:wrap; }
 
-/* ============================================================
-   TOAST NOTIFICATION
-============================================================ */
+/* =============================================
+   TOAST
+============================================= */
 .toast {
-  position: fixed;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%) translateY(100px);
-  background: var(--brown);
-  color: var(--white);
-  padding: 0.85rem 1.5rem;
-  border-radius: 30px;
-  font-size: 0.85rem;
-  font-weight: 700;
-  box-shadow: var(--shadow-md);
-  z-index: 500;
-  transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
-  white-space: nowrap;
-  pointer-events: none;
+  position:fixed; bottom:2rem; left:50%;
+  transform:translateX(-50%) translateY(100px);
+  background:var(--dusk); color:var(--white);
+  padding:0.85rem 1.5rem; border-radius:30px;
+  font-size:0.83rem; font-weight:600;
+  box-shadow:var(--shadow-md); z-index:600;
+  transition:transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  white-space:nowrap; pointer-events:none;
+  border:1px solid rgba(245,200,66,0.3);
 }
-.toast.show { transform: translateX(-50%) translateY(0); }
+.toast.show { transform:translateX(-50%) translateY(0); }
 
-/* ============================================================
+/* =============================================
    RESPONSIVE
-============================================================ */
-@media (max-width: 900px) {
-  .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .footer-top { grid-template-columns: 1fr 1fr; }
+============================================= */
+@media (max-width:960px) {
+  .about-grid, .cgrid { grid-template-columns:1fr; gap:2.5rem; }
+  .about-img-badge { bottom:-1rem; right:-0.5rem; width:90px; height:90px; }
+  .footer-top { grid-template-columns:1fr 1fr; }
 }
-@media (max-width: 640px) {
-  .nav-links { display: none; }
+@media (max-width:640px) {
+  .nav-links { display:none; }
   .nav-links.open {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 68px;
-    left: 0;
-    right: 0;
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
-    padding: 1rem 2rem;
-    gap: 1rem;
+    display:flex; flex-direction:column;
+    position:absolute; top:66px; left:0; right:0;
+    background:rgba(28,16,21,0.98);
+    border-bottom:1px solid rgba(240,160,32,0.2);
+    padding:1rem 2rem; gap:1rem;
   }
-  .menu-toggle { display: flex; }
-  .hero { padding: 4rem 1.5rem; }
-  .hero-stats { gap: 1.5rem; }
-  .section-wrap { padding: 0 1.25rem; }
-  .footer-top { grid-template-columns: 1fr; gap: 2rem; }
-  .cart-drawer { max-width: 100%; }
-  .modal { margin: 0; border-radius: 0; max-height: 100vh; }
+  .menu-toggle { display:flex; }
+  .hero { min-height:auto; padding:5rem 1.5rem 6rem; }
+  .hero-stats { gap:1.5rem; }
+  .wrap { padding:0 1.25rem; }
+  .footer-top { grid-template-columns:1fr; gap:2rem; }
+  .cart-drawer { max-width:100%; }
+  .modal { border-radius:0; max-height:100vh; }
+  .about-img-badge { display:none; }
 }
 </style>
 </head>
 <body>
 
 <!-- ANNOUNCEMENT -->
-<div class="announcement-bar">
-  🕯️ Free shipping on orders over $35 <span>·</span> All candles hand-poured in Saint David, Arizona
+<div class="bar">
+  🕯️ Free shipping on orders over $35 <span>·</span> Hand-poured in Saint David, Arizona <span>·</span> 5-Star Rated
 </div>
 
-<!-- NAVIGATION -->
+<!-- NAV -->
 <nav id="mainNav">
   <div class="nav-inner">
-    <a href="#" class="nav-brand">The Candle <em>Bunkhouse</em></a>
+    <a href="#home" class="nav-brand">The Candle <em>Bunkhouse</em></a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#shop" onclick="closeNav()">Shop</a></li>
       <li><a href="#about" onclick="closeNav()">Our Story</a></li>
       <li><a href="#reviews" onclick="closeNav()">Reviews</a></li>
       <li><a href="#contact" onclick="closeNav()">Contact</a></li>
     </ul>
-    <div class="nav-actions">
-      <button class="cart-btn" onclick="openCart()" aria-label="Open cart">
+    <div class="nav-right">
+      <button class="cart-btn" onclick="openCart()">
         🛒 Cart
         <span class="cart-count hidden" id="cartCount">0</span>
       </button>
-      <button class="menu-toggle" id="menuToggle" onclick="toggleNav()" aria-label="Toggle menu">
+      <button class="menu-toggle" id="menuToggle" onclick="toggleNav()">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -1275,90 +1033,119 @@ footer {
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <div class="hero-badge">🕯️ Handcrafted in Arizona since 2014</div>
-  <h1>Candles That Fill Your Home<br>with <em>Pure Joy</em></h1>
-  <p class="hero-sub">Premium parasoy & soy wax — hand-poured, highly scented, non-toxic</p>
-  <p class="hero-tagline">Small batch &nbsp;·&nbsp; Made with love &nbsp;·&nbsp; Fast shipping</p>
-  <div class="hero-stats">
-    <div class="hero-stat"><div class="num">503+</div><div class="lbl">Happy Customers</div></div>
-    <div class="hero-stat"><div class="num">5.0 ★</div><div class="lbl">Perfect Rating</div></div>
-    <div class="hero-stat"><div class="num">11 Yrs</div><div class="lbl">Of Craft</div></div>
-    <div class="hero-stat"><div class="num">20+</div><div class="lbl">Scents Available</div></div>
+  <div class="hero-bg"></div>
+
+  <!-- Saguaro silhouette -->
+  <div class="hero-saguaro">
+    <svg viewBox="0 0 1440 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;height:220px">
+      <path d="M0,220 L0,160 Q20,160 20,140 L20,100 Q20,90 30,90 Q40,90 40,100 L40,120 Q40,130 50,130 L60,130 Q70,130 70,120 L70,80 Q70,70 80,70 Q90,70 90,80 L90,160 L110,160 L110,80 Q110,70 120,70 Q130,70 130,80 L130,120 Q130,130 140,130 L150,130 Q160,130 160,120 L160,100 Q160,90 170,90 Q180,90 180,100 L180,160 L240,160 L240,220 Z
+      M280,220 L280,140 Q280,130 290,130 Q300,130 300,140 L300,110 Q300,100 310,100 Q320,100 320,110 L320,140 L360,140 L360,220 Z
+      M400,220 L400,120 Q400,110 415,110 Q430,110 430,120 L430,90 Q430,75 445,75 Q460,75 460,90 L460,60 Q460,45 475,45 Q490,45 490,60 L490,160 L510,160 L510,220 Z
+      M550,220 L550,150 L600,150 L600,220 Z
+      M650,220 L650,130 Q650,120 660,120 Q670,120 670,130 L670,100 Q670,88 683,88 Q696,88 696,100 L696,80 Q696,65 710,65 Q724,65 724,80 L724,160 L750,160 L750,220 Z
+      M800,220 L800,155 Q800,145 810,145 Q820,145 820,155 L820,130 Q820,118 833,118 Q846,118 846,130 L846,100 Q846,85 860,85 Q874,85 874,100 L874,60 Q874,45 888,45 Q902,45 902,60 L902,160 L920,160 L920,220 Z
+      M960,220 L960,145 L1010,145 L1010,220 Z
+      M1050,220 L1050,125 Q1050,115 1062,115 Q1074,115 1074,125 L1074,95 Q1074,82 1088,82 Q1102,82 1102,95 L1102,160 L1130,160 L1130,220 Z
+      M1180,220 L1180,140 Q1180,128 1193,128 Q1206,128 1206,140 L1206,110 Q1206,98 1220,98 Q1234,98 1234,110 L1234,90 Q1234,78 1248,78 Q1262,78 1262,90 L1262,160 L1280,160 L1280,220 Z
+      M1320,220 L1320,145 Q1320,135 1330,135 Q1340,135 1340,145 L1340,115 Q1340,103 1353,103 Q1366,103 1366,115 L1366,160 L1400,160 L1400,220 Z
+      M1440,220 L1440,160 L1440,220 Z"
+      fill="rgba(15,8,28,0.85)"/>
+    </svg>
   </div>
-  <div class="hero-btns">
-    <button class="btn-gold" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Shop the Collection</button>
-    <button class="btn-ghost" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Our Story</button>
+
+  <div class="hero-content">
+    <div class="hero-badge">🏜️ Handcrafted in Arizona since 2014</div>
+    <h1>Where Every Flame<br>Tells a <em>Story</em></h1>
+    <p class="hero-sub">Premium parasoy & soy wax candles — hand-poured with love in the Arizona desert</p>
+    <p class="hero-tags">Small batch &nbsp;·&nbsp; Highly scented &nbsp;·&nbsp; Non-toxic &nbsp;·&nbsp; Fast shipping</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="n">503+</div><div class="l">Happy Customers</div></div>
+      <div class="hero-stat"><div class="n">5.0★</div><div class="l">Perfect Rating</div></div>
+      <div class="hero-stat"><div class="n">11</div><div class="l">Years of Craft</div></div>
+      <div class="hero-stat"><div class="n">20+</div><div class="l">Scents Available</div></div>
+    </div>
+    <div class="hero-btns">
+      <button class="btn-sunset" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Shop the Collection</button>
+      <button class="btn-ghost-white" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Meet Raquel</button>
+    </div>
   </div>
-  <div class="hero-scroll-hint">Scroll to explore</div>
 </section>
 
 <!-- SHOP -->
 <section id="shop">
-  <div class="section-wrap">
-    <div class="section-header">
-      <div class="section-label">Handcrafted Collection</div>
-      <h2 class="section-title">Light Up Your World</h2>
-      <p class="section-sub">Every candle is hand-poured in small batches using premium parasoy and soy wax. Highly scented, clean-burning, and made with love in Saint David, Arizona.</p>
+  <div class="wrap">
+    <div class="sec-hdr">
+      <div class="sec-label">Handcrafted Collection</div>
+      <h2 class="sec-title">Light Up Your World</h2>
+      <p class="sec-sub">Every candle is hand-poured in small batches using premium parasoy and soy wax. Highly scented, clean-burning, made with love in Saint David, Arizona.</p>
     </div>
-    <div class="filter-row" id="filterRow">
-      <button class="filter-btn active" onclick="filterProducts('all',this)">All (20)</button>
-      <button class="filter-btn" onclick="filterProducts('floral',this)">🌸 Floral</button>
-      <button class="filter-btn" onclick="filterProducts('citrus',this)">🍋 Citrus</button>
-      <button class="filter-btn" onclick="filterProducts('woodsy',this)">🌲 Woodsy</button>
-      <button class="filter-btn" onclick="filterProducts('bakery',this)">🍰 Bakery</button>
-      <button class="filter-btn" onclick="filterProducts('coastal',this)">🌊 Coastal</button>
-      <button class="filter-btn" onclick="filterProducts('specialty',this)">✨ Specialty</button>
+    <div class="filter-row">
+      <button class="fbtn active" onclick="filterP('all',this)">All (20)</button>
+      <button class="fbtn" onclick="filterP('floral',this)">🌸 Floral</button>
+      <button class="fbtn" onclick="filterP('citrus',this)">🍋 Citrus</button>
+      <button class="fbtn" onclick="filterP('woodsy',this)">🌲 Woodsy</button>
+      <button class="fbtn" onclick="filterP('bakery',this)">🍰 Bakery</button>
+      <button class="fbtn" onclick="filterP('coastal',this)">🌊 Coastal</button>
+      <button class="fbtn" onclick="filterP('specialty',this)">✨ Specialty</button>
     </div>
-    <div class="products-grid" id="productsGrid"></div>
+    <div class="pgrid" id="pgrid"></div>
   </div>
 </section>
 
 <!-- FEATURES -->
 <section id="features">
-  <div class="section-wrap">
-    <div class="section-header">
-      <div class="section-label" style="color:var(--gold)">Why Bunkhouse</div>
-      <h2 class="section-title" style="color:var(--white)">Made Different,<br>Made for You</h2>
+  <div class="wrap">
+    <div class="sec-hdr">
+      <div class="sec-label" style="color:var(--gold)">Why Bunkhouse</div>
+      <h2 class="sec-title" style="color:var(--white)">Made Different,<br>Made for You</h2>
     </div>
-    <div class="features-grid">
-      <div class="feature-card"><div class="feature-icon">🌿</div><div class="feature-title">Clean Wax Blend</div><div class="feature-text">Premium parasoy and soy wax — no harsh toxins, burns clean from first light to last.</div></div>
-      <div class="feature-card"><div class="feature-icon">👐</div><div class="feature-title">Truly Hand-Poured</div><div class="feature-text">Every single candle is made by hand in small batches right here in Arizona.</div></div>
-      <div class="feature-card"><div class="feature-icon">💨</div><div class="feature-title">Strong Scent Throw</div><div class="feature-text">Highly scented formulas designed to fill your entire room with lasting fragrance.</div></div>
-      <div class="feature-card"><div class="feature-icon">📦</div><div class="feature-title">Lightning Shipping</div><div class="feature-text">Customers rave about how fast their orders arrive — often next-day shipped.</div></div>
-      <div class="feature-card"><div class="feature-icon">🎁</div><div class="feature-title">Gift-Ready</div><div class="feature-text">Beautiful presentation right out of the box — perfect for any occasion, no wrapping needed.</div></div>
+    <div class="fgrid">
+      <div class="fcard"><div class="ficon">🌿</div><div class="ftitle">Clean Wax Blend</div><div class="ftext">Premium parasoy and soy wax — no harsh toxins. Burns clean from the very first light to the last flicker.</div></div>
+      <div class="fcard"><div class="ficon">👐</div><div class="ftitle">Truly Hand-Poured</div><div class="ftext">Every single candle is made by hand in small batches. No mass production, ever — just Raquel and her craft.</div></div>
+      <div class="fcard"><div class="ficon">💨</div><div class="ftitle">Strong Scent Throw</div><div class="ftext">Highly scented formulas engineered to fill your entire room with lasting fragrance that doesn't fade fast.</div></div>
+      <div class="fcard"><div class="ficon">📦</div><div class="ftitle">Lightning Shipping</div><div class="ftext">Customers rave about how fast orders arrive — often shipped the very next day right from Arizona to your door.</div></div>
+      <div class="fcard"><div class="ficon">🎁</div><div class="ftitle">Gift-Ready Always</div><div class="ftext">Beautiful presentation straight out of the box. Perfect for birthdays, holidays, or just because — no wrapping needed.</div></div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
+<!-- ABOUT / MEET RAQUEL -->
 <section id="about">
-  <div class="section-wrap">
+  <div class="wrap">
     <div class="about-grid">
-      <div>
-        <div class="about-eyebrow">Our Story</div>
-        <h2 class="about-title">From Hobby<br>to Heart</h2>
-        <p class="about-quote">"Wherever life plants you, bloom with grace."</p>
-        <p class="about-text">What started as a deep love of fragrance blossomed into something truly beautiful. Raquel Thompson White began her candle-making journey as a simple hobby — a passion for scents and the therapeutic joy of creating something with her hands.</p>
-        <p class="about-text" style="margin-top:1rem">Inspired by her eldest son's unwavering belief in her abilities, she faced every challenge head-on: finding the right wick, perfecting fragrance ratios, eliminating every flaw. Through trial, error, and determination, The Candle Bunkhouse, LLC was born.</p>
-        <p class="about-text" style="margin-top:1rem">Today, Raquel and her husband John — both southpaws and proud Arizonans — pour every candle by hand. They travel, connect with customers at craft shows, and keep pouring love into every tin and jar that leaves their studio.</p>
+      <div class="about-img-wrap">
+        <div class="about-img-frame">
+          <img src="https://i.etsystatic.com/isa/faf79b/1195961885507/isa_760xN.1195961885507_hkpl.jpg"
+               alt="Raquel Thompson White — founder of The Candle Bunkhouse"
+               onerror="this.onerror=null;this.src='';this.parentNode.innerHTML='<div style=\'width:100%;height:100%;background:linear-gradient(135deg,var(--sand-dark),var(--terracotta));display:flex;align-items:center;justify-content:center;font-size:6rem\'>🕯️</div>'">
+          <div class="about-img-overlay"></div>
+        </div>
+        <div class="about-img-badge">
+          <div class="bn">11</div>
+          <div class="bl">Years of<br>Craft</div>
+        </div>
       </div>
-      <div>
-        <div class="about-visual">
-          <div class="about-stat-big">503</div>
-          <div class="about-stat-label">Candles Sold</div>
-          <div class="about-divider"></div>
-          <div class="about-stat-big" style="font-size:3rem">5.0 ★</div>
-          <div class="about-stat-label">Perfect Rating</div>
-          <div class="about-divider"></div>
-          <div class="about-stat-big" style="font-size:2.5rem">11 Yrs</div>
-          <div class="about-stat-label">Of Crafting</div>
-          <div class="about-divider"></div>
-          <div class="about-name">Raquel Thompson White</div>
-          <div class="about-loc">📍 Saint David, Arizona</div>
-          <div class="about-socials">
-            <a href="http://www.facebook.com/thecandlebunkhouse" target="_blank" class="social-pill">📘 Facebook</a>
-            <a href="http://www.instagram.com/RAQUELTHOMPSON38" target="_blank" class="social-pill">📸 Instagram</a>
+      <div class="about-text-side">
+        <div class="sec-label">Meet Raquel</div>
+        <h2 class="sec-title">From Hobby<br>to Heart</h2>
+        <p class="about-quote">"Wherever life plants you,<br>bloom with grace."</p>
+        <p class="about-body">What started as a deep love of fragrance blossomed into something truly beautiful. Raquel Thompson White began her candle-making journey as a simple hobby — a passion for scents and the therapeutic joy of creating with her hands.</p>
+        <p class="about-body">Inspired by her eldest son's unwavering belief in her abilities, she tackled every challenge head-on: finding the right wick, perfecting fragrance ratios, eliminating every flaw. Through trial, error, and pure determination, The Candle Bunkhouse, LLC was born.</p>
+        <p class="about-body">Today, Raquel and her husband John — both proud left-handed Arizonans — pour every candle by hand in Saint David. They travel, connect with customers at craft shows across the Southwest, and pour love into every single tin that leaves their studio.</p>
+        <div class="about-sig">
+          <div class="about-sig-img">
+            <img src="https://i.etsystatic.com/iusa/6fa18b/104188178/iusa_75x75.104188178_9wxo.jpg"
+                 alt="Raquel Thompson White"
+                 onerror="this.onerror=null;this.style.display='none'">
           </div>
+          <div>
+            <div class="about-sig-name">Raquel Thompson White</div>
+            <div class="about-sig-role">Founder & Candle Maker · Saint David, AZ</div>
+          </div>
+        </div>
+        <div class="about-socials">
+          <a href="http://www.facebook.com/thecandlebunkhouse" target="_blank" class="social-btn">📘 Facebook</a>
+          <a href="http://www.instagram.com/RAQUELTHOMPSON38" target="_blank" class="social-btn">📸 Instagram</a>
         </div>
       </div>
     </div>
@@ -1367,145 +1154,77 @@ footer {
 
 <!-- REVIEWS -->
 <section id="reviews">
-  <div class="section-wrap">
-    <div class="section-header">
-      <div class="section-label">Customer Love</div>
-      <h2 class="section-title">What People Are Saying</h2>
+  <div class="wrap">
+    <div class="sec-hdr">
+      <div class="sec-label">Customer Love</div>
+      <h2 class="sec-title">What People Are Saying</h2>
     </div>
-    <div class="rating-summary">
-      <div>
-        <div class="rating-big">5.0</div>
-      </div>
+    <div class="rating-bar">
+      <div class="rating-num">5.0</div>
       <div>
         <div class="rating-stars">★★★★★</div>
-        <div class="rating-meta">15 verified reviews · 503 happy customers · 11 years on the market</div>
+        <div class="rating-meta">15 verified reviews &nbsp;·&nbsp; 503 happy customers &nbsp;·&nbsp; 11 years crafting candles</div>
       </div>
     </div>
-    <div class="reviews-grid">
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Not only do the candles smell amazing but shipping was lightning fast! 1000% recommend to anyone that wants their space to smell good 💜"</p>
-        <div class="review-author">Etsy Buyer</div>
-        <div class="review-date">December 2023</div>
-        <div class="review-product">Verified Purchase</div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Beautiful packaging! The candles always burn very clean. The perfect amount of fragrance! The only candles and wax melts that don't give me a headache."</p>
-        <div class="review-author">Brittany</div>
-        <div class="review-date">December 2023</div>
-        <div class="review-product">Verified Purchase · Wax Melts</div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Awesome as always. Fast shipping and smells amazing. Def will buy again."</p>
-        <div class="review-author">Julie</div>
-        <div class="review-date">August 2024</div>
-        <div class="review-product">Verified Purchase · Wax Melts</div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"I purchased this for my sister for her birthday and she loves the scent. It arrives in plenty of time for her big day. Very high quality candle. Excellent customer service."</p>
-        <div class="review-author">Keasha</div>
-        <div class="review-date">March 2024</div>
-        <div class="review-product">Verified Purchase · 8oz Paint Can Candle</div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Love my melts from The Candle Bunkhouse. Wonderfully delightful scents that last."</p>
-        <div class="review-author">EvolvedThought</div>
-        <div class="review-date">June 2024</div>
-        <div class="review-product">Verified Purchase · Wax Melts</div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"I ordered and the very next day my order was shipped and had it the next day. These are so unique and the smell is amazing!"</p>
-        <div class="review-author">Debbie</div>
-        <div class="review-date">September 2023</div>
-        <div class="review-product">Verified Purchase · Desert Flower Pottery Candle</div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Great candles and superb customer service. I will be a customer for life!"</p>
-        <div class="review-author">EvolvedThought</div>
-        <div class="review-date">November 2023</div>
-        <div class="review-product">Verified Purchase</div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Beautiful beautiful beautiful!!! Amazing!! Love these! And the service… top notch!"</p>
-        <div class="review-author">Debbie</div>
-        <div class="review-date">September 2023</div>
-        <div class="review-product">Verified Purchase · Saguaro & Flower Candle</div>
-      </div>
+    <div class="rgrid">
+      <div class="rcard"><div class="rstars">★★★★★</div><p class="rtext">"Not only do the candles smell amazing but shipping was lightning fast! 1000% recommend to anyone that wants their space to smell good 💜"</p><div class="rauthor">Verified Buyer</div><div class="rdate">December 2023</div></div>
+      <div class="rcard"><div class="rstars">★★★★★</div><p class="rtext">"Beautiful packaging! The candles always burn very clean. The perfect amount of fragrance! The only candles and wax melts that don't give me a headache."</p><div class="rauthor">Brittany</div><div class="rdate">December 2023</div><div class="rprod">Verified Purchase · Wax Melts</div></div>
+      <div class="rcard"><div class="rstars">★★★★★</div><p class="rtext">"Awesome as always. Fast shipping and smells amazing. Def will buy again."</p><div class="rauthor">Julie</div><div class="rdate">August 2024</div><div class="rprod">Verified Purchase · Wax Melts</div></div>
+      <div class="rcard"><div class="rstars">★★★★★</div><p class="rtext">"I purchased this for my sister for her birthday and she loves the scent. It arrives in plenty of time. Very high quality candle. Excellent customer service."</p><div class="rauthor">Keasha</div><div class="rdate">March 2024</div><div class="rprod">Verified Purchase · Paint Can Candle</div></div>
+      <div class="rcard"><div class="rstars">★★★★★</div><p class="rtext">"Love my melts from The Candle Bunkhouse. Wonderfully delightful scents that last."</p><div class="rauthor">EvolvedThought</div><div class="rdate">June 2024</div><div class="rprod">Verified Purchase · Wax Melts</div></div>
+      <div class="rcard"><div class="rstars">★★★★★</div><p class="rtext">"I ordered and the very next day my order was shipped and had it the next day. These are so unique and the smell is amazing!"</p><div class="rauthor">Debbie</div><div class="rdate">September 2023</div><div class="rprod">Verified Purchase · Desert Flower Pottery</div></div>
+      <div class="rcard"><div class="rstars">★★★★★</div><p class="rtext">"Great candles and superb customer service. I will be a customer for life!"</p><div class="rauthor">EvolvedThought</div><div class="rdate">November 2023</div><div class="rprod">Verified Purchase</div></div>
+      <div class="rcard"><div class="rstars">★★★★★</div><p class="rtext">"Beautiful beautiful beautiful!!! Amazing!! Love these! And the service… top notch!"</p><div class="rauthor">Debbie</div><div class="rdate">September 2023</div><div class="rprod">Verified Purchase · Saguaro Candle</div></div>
     </div>
   </div>
 </section>
 
-<!-- CTA / NEWSLETTER -->
+<!-- EMAIL CTA -->
 <section id="cta">
   <h2>Stay in the Loop</h2>
-  <p>Be the first to know about new scents, seasonal releases, and exclusive offers.</p>
-  <form class="newsletter-form" onsubmit="handleNewsletter(event)">
-    <input type="email" placeholder="Your email address" required aria-label="Email address">
+  <p>Be the first to know about new scents, seasonal releases, and exclusive offers from Raquel.</p>
+  <form class="nl-form" onsubmit="handleNL(event)">
+    <input type="email" placeholder="Your email address" required>
     <button type="submit">Subscribe</button>
   </form>
-  <p class="newsletter-note">No spam, ever. Just candle news you'll actually want to read.</p>
+  <p class="nl-note">No spam, ever. Just candle news you'll actually love.</p>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="section-wrap">
-    <div class="contact-grid">
-      <div class="contact-info-side">
-        <div class="section-label">Get In Touch</div>
-        <h2 class="contact-info-title">We'd Love to Hear From You</h2>
-        <p class="contact-info-text">Have a question about a scent? Interested in a custom order, bulk pricing, or wholesale? Raquel personally reads and responds to every single message. We're a small family business and we truly care.</p>
-        <div class="contact-links">
-          <a href="mailto:hello@thecandlebunkhouse.com" class="contact-link-item">
-            <span class="contact-link-icon">✉️</span>
-            <div>
-              <div>Email Us</div>
-              <span class="contact-link-label">hello@thecandlebunkhouse.com</span>
-            </div>
+  <div class="wrap">
+    <div class="cgrid">
+      <div class="cinfo-side">
+        <div class="sec-label">Get In Touch</div>
+        <h2 class="cinfo-title">We'd Love to Hear From You</h2>
+        <p class="cinfo-text">Have a question about a scent? Interested in a custom order, bulk pricing, or wholesale? Raquel personally reads and responds to every message. We're a small family business and we genuinely care about every single customer.</p>
+        <div class="clinks">
+          <a href="mailto:hello@thecandlebunkhouse.com" class="clink">
+            <span class="clink-icon">✉️</span>
+            <div><div>Email Us</div><span class="clink-sub">hello@thecandlebunkhouse.com</span></div>
           </a>
-          <a href="http://www.facebook.com/thecandlebunkhouse" target="_blank" class="contact-link-item">
-            <span class="contact-link-icon">📘</span>
-            <div>
-              <div>Facebook</div>
-              <span class="contact-link-label">@thecandlebunkhouse</span>
-            </div>
+          <a href="http://www.facebook.com/thecandlebunkhouse" target="_blank" class="clink">
+            <span class="clink-icon">📘</span>
+            <div><div>Facebook</div><span class="clink-sub">@thecandlebunkhouse</span></div>
           </a>
-          <a href="http://www.instagram.com/RAQUELTHOMPSON38" target="_blank" class="contact-link-item">
-            <span class="contact-link-icon">📸</span>
-            <div>
-              <div>Instagram</div>
-              <span class="contact-link-label">@RAQUELTHOMPSON38</span>
-            </div>
+          <a href="http://www.instagram.com/RAQUELTHOMPSON38" target="_blank" class="clink">
+            <span class="clink-icon">📸</span>
+            <div><div>Instagram</div><span class="clink-sub">@RAQUELTHOMPSON38</span></div>
           </a>
-          <div class="contact-link-item" style="cursor:default">
-            <span class="contact-link-icon">📍</span>
-            <div>
-              <div>Based In</div>
-              <span class="contact-link-label">Saint David, Arizona</span>
-            </div>
+          <div class="clink" style="cursor:default">
+            <span class="clink-icon">📍</span>
+            <div><div>Based In</div><span class="clink-sub">Saint David, Arizona 85630</span></div>
           </div>
         </div>
       </div>
-      <div class="contact-form-wrap">
-        <div class="contact-form-title">Send a Message</div>
-        <form onsubmit="handleContactForm(event)">
-          <div class="form-group">
-            <label class="form-label">Your Name</label>
-            <input type="text" class="form-input" placeholder="First & last name" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Email Address</label>
-            <input type="email" class="form-input" placeholder="you@example.com" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Subject</label>
-            <select class="form-input">
+      <div class="cform-wrap">
+        <div class="cform-title">Send a Message</div>
+        <form onsubmit="handleContact(event)">
+          <div class="fg"><label class="flabel">Your Name</label><input type="text" class="finput" placeholder="First & last name" required></div>
+          <div class="fg"><label class="flabel">Email Address</label><input type="email" class="finput" placeholder="you@example.com" required></div>
+          <div class="fg">
+            <label class="flabel">Topic</label>
+            <select class="finput">
               <option value="">Select a topic…</option>
               <option>Question about a scent</option>
               <option>Custom or bulk order</option>
@@ -1514,11 +1233,8 @@ footer {
               <option>Other</option>
             </select>
           </div>
-          <div class="form-group">
-            <label class="form-label">Message</label>
-            <textarea class="form-input" placeholder="Tell us what's on your mind…" required></textarea>
-          </div>
-          <button type="submit" class="btn-submit">Send Message →</button>
+          <div class="fg"><label class="flabel">Message</label><textarea class="finput" placeholder="Tell us what's on your mind…" required></textarea></div>
+          <button type="submit" class="btn-send">Send Message →</button>
         </form>
       </div>
     </div>
@@ -1531,80 +1247,219 @@ footer {
     <div class="footer-top">
       <div>
         <div class="footer-brand">The Candle <em>Bunkhouse</em></div>
-        <p class="footer-tagline">Hand-poured parasoy & soy wax candles made with love in Saint David, Arizona. Small batch, highly scented, non-toxic — since 2014.</p>
+        <p class="footer-tagline">Hand-poured parasoy & soy wax candles crafted with love in Saint David, Arizona. Small batch, highly scented, non-toxic — since 2014.</p>
+        <div class="footer-social">
+          <a href="http://www.facebook.com/thecandlebunkhouse" target="_blank" class="fsoc">📘</a>
+          <a href="http://www.instagram.com/RAQUELTHOMPSON38" target="_blank" class="fsoc">📸</a>
+          <a href="mailto:hello@thecandlebunkhouse.com" class="fsoc">✉️</a>
+        </div>
       </div>
       <div>
         <div class="footer-col-title">Shop</div>
         <ul class="footer-links">
-          <li><a href="#shop" onclick="filterProducts('all', document.querySelector('.filter-btn'))">All Candles</a></li>
-          <li><a href="#shop" onclick="filterBtn('floral')">Floral Scents</a></li>
-          <li><a href="#shop" onclick="filterBtn('citrus')">Citrus Scents</a></li>
-          <li><a href="#shop" onclick="filterBtn('bakery')">Bakery Scents</a></li>
-          <li><a href="#shop" onclick="filterBtn('coastal')">Coastal Scents</a></li>
-          <li><a href="#shop" onclick="filterBtn('specialty')">Specialty Items</a></li>
+          <li><a href="#shop">All Candles</a></li>
+          <li><a href="#shop" onclick="filterP('floral',null)">Floral Scents</a></li>
+          <li><a href="#shop" onclick="filterP('citrus',null)">Citrus Scents</a></li>
+          <li><a href="#shop" onclick="filterP('bakery',null)">Bakery Scents</a></li>
+          <li><a href="#shop" onclick="filterP('coastal',null)">Coastal Scents</a></li>
+          <li><a href="#shop" onclick="filterP('specialty',null)">Specialty Items</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-col-title">Connect</div>
+        <div class="footer-col-title">Company</div>
         <ul class="footer-links">
           <li><a href="#about">Our Story</a></li>
           <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-          <li><a href="http://www.facebook.com/thecandlebunkhouse" target="_blank">Facebook</a></li>
-          <li><a href="http://www.instagram.com/RAQUELTHOMPSON38" target="_blank">Instagram</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" onclick="openLegal('shipping');return false;">Shipping Policy</a></li>
+          <li><a href="#" onclick="openLegal('returns');return false;">Returns & Refunds</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Legal</div>
+        <ul class="footer-links">
+          <li><a href="#" onclick="openLegal('privacy');return false;">Privacy Policy</a></li>
+          <li><a href="#" onclick="openLegal('terms');return false;">Terms of Service</a></li>
+          <li><a href="#" onclick="openLegal('shipping');return false;">Shipping Info</a></li>
+          <li><a href="#" onclick="openLegal('returns');return false;">Refund Policy</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-legal">© 2026 The Candle Bunkhouse, LLC · Saint David, Arizona · All rights reserved.</div>
-      <div style="font-size:0.72rem;color:rgba(255,255,255,0.2)">Made with 🕯️ by Raquel Thompson White</div>
+      <div class="footer-legal">
+        © 2026 The Candle Bunkhouse, LLC · Saint David, Arizona · All rights reserved. &nbsp;
+        <a href="#" onclick="openLegal('privacy');return false;">Privacy</a> &nbsp;·&nbsp;
+        <a href="#" onclick="openLegal('terms');return false;">Terms</a>
+      </div>
+      <div style="font-size:0.68rem;color:rgba(255,255,255,0.18)">Made with 🕯️ in Arizona</div>
     </div>
   </div>
 </footer>
 
-<!-- CART OVERLAY + DRAWER -->
+<!-- ============ LEGAL OVERLAYS ============ -->
+
+<!-- PRIVACY POLICY -->
+<div class="legal-overlay" id="legal-privacy" onclick="closeLegal(event,'privacy')">
+  <div class="legal-box">
+    <button class="legal-close" onclick="closeLegalById('privacy')">✕</button>
+    <h2>Privacy Policy</h2>
+    <p class="legal-date">Last updated: January 1, 2026</p>
+    <p>The Candle Bunkhouse, LLC ("we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you visit our website or place an order.</p>
+    <h3>Information We Collect</h3>
+    <p>When you place an order or contact us, we may collect: your name, email address, shipping address, phone number, and payment information (processed securely — we never store payment card details). We may also collect non-personal browsing data such as browser type and pages visited.</p>
+    <h3>How We Use Your Information</h3>
+    <ul>
+      <li>To process and fulfill your orders</li>
+      <li>To communicate with you about your order status</li>
+      <li>To send promotional emails if you have opted in (you may unsubscribe at any time)</li>
+      <li>To improve our website and customer experience</li>
+    </ul>
+    <h3>Sharing of Information</h3>
+    <p>We do not sell, trade, or rent your personal information to third parties. We may share information with trusted service providers (e.g., shipping carriers, payment processors) solely to fulfill your order. These providers are contractually obligated to keep your information secure.</p>
+    <h3>Data Security</h3>
+    <p>We implement reasonable security measures to protect your personal information. However, no transmission over the Internet is 100% secure. We encourage you to use strong passwords and protect your account credentials.</p>
+    <h3>Cookies</h3>
+    <p>Our website may use cookies to enhance your browsing experience. You can disable cookies in your browser settings, though this may affect certain site functionality.</p>
+    <h3>Your Rights</h3>
+    <p>You have the right to access, correct, or delete the personal information we hold about you. To exercise these rights, contact us at hello@thecandlebunkhouse.com.</p>
+    <h3>Children's Privacy</h3>
+    <p>Our website is not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
+    <h3>Contact Us</h3>
+    <p>Questions about this policy? Email us at <a href="mailto:hello@thecandlebunkhouse.com">hello@thecandlebunkhouse.com</a> or visit our <a href="#contact" onclick="closeLegalById('privacy')">Contact page</a>.</p>
+  </div>
+</div>
+
+<!-- TERMS OF SERVICE -->
+<div class="legal-overlay" id="legal-terms" onclick="closeLegal(event,'terms')">
+  <div class="legal-box">
+    <button class="legal-close" onclick="closeLegalById('terms')">✕</button>
+    <h2>Terms of Service</h2>
+    <p class="legal-date">Last updated: January 1, 2026</p>
+    <p>Welcome to The Candle Bunkhouse, LLC. By accessing or using our website and purchasing our products, you agree to be bound by the following Terms of Service. Please read them carefully.</p>
+    <h3>Use of Our Website</h3>
+    <p>You agree to use this website only for lawful purposes and in a manner that does not infringe the rights of others. You may not reproduce, distribute, or create derivative works from any content on this site without our express written permission.</p>
+    <h3>Products & Pricing</h3>
+    <p>All prices are listed in US dollars and are subject to change without notice. We reserve the right to limit quantities, refuse orders, or cancel orders at our discretion. Product images are representative — actual appearance may vary slightly due to the handcrafted nature of our products.</p>
+    <h3>Orders & Payment</h3>
+    <p>By placing an order, you represent that you are at least 18 years of age and that all information you provide is accurate and complete. We accept major credit cards and other payment methods as displayed at checkout. Payment is processed securely at the time of order.</p>
+    <h3>Candle Safety</h3>
+    <p>Our candles are intended for use by adults only. Always burn candles within sight, keep away from flammable materials, keep out of reach of children and pets, burn on a heat-resistant surface, keep the wick trimmed to ¼ inch, and never burn a candle for more than 4 hours at a time. The Candle Bunkhouse, LLC is not responsible for damage or injury resulting from improper candle use.</p>
+    <h3>Intellectual Property</h3>
+    <p>All content on this website — including text, images, logos, and product descriptions — is the property of The Candle Bunkhouse, LLC and is protected by applicable intellectual property laws. Unauthorized use is strictly prohibited.</p>
+    <h3>Limitation of Liability</h3>
+    <p>To the maximum extent permitted by applicable law, The Candle Bunkhouse, LLC shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of our website or products. Our total liability for any claim shall not exceed the amount you paid for the specific product giving rise to the claim.</p>
+    <h3>Governing Law</h3>
+    <p>These Terms are governed by the laws of the State of Arizona, USA, without regard to its conflict of law provisions.</p>
+    <h3>Changes to These Terms</h3>
+    <p>We reserve the right to modify these Terms at any time. Continued use of our website after changes constitutes your acceptance of the revised Terms.</p>
+    <h3>Contact</h3>
+    <p>For questions, contact us at <a href="mailto:hello@thecandlebunkhouse.com">hello@thecandlebunkhouse.com</a>.</p>
+  </div>
+</div>
+
+<!-- SHIPPING POLICY -->
+<div class="legal-overlay" id="legal-shipping" onclick="closeLegal(event,'shipping')">
+  <div class="legal-box">
+    <button class="legal-close" onclick="closeLegalById('shipping')">✕</button>
+    <h2>Shipping Policy</h2>
+    <p class="legal-date">Last updated: January 1, 2026</p>
+    <p>At The Candle Bunkhouse, LLC, we take pride in getting your candles to you quickly and safely. Here's everything you need to know about our shipping process.</p>
+    <h3>Processing Time</h3>
+    <p>Orders are typically processed and shipped within 1–3 business days of purchase. Many orders ship the very next business day. You will receive a shipping confirmation email with tracking information once your order has been dispatched.</p>
+    <h3>Shipping Methods & Rates</h3>
+    <ul>
+      <li><strong>Free Shipping:</strong> On all orders over $35 (US domestic)</li>
+      <li><strong>Standard Shipping:</strong> $5.99 for orders under $35 (3–7 business days)</li>
+      <li><strong>Priority Shipping:</strong> Calculated at checkout (1–3 business days)</li>
+    </ul>
+    <h3>Shipping Carriers</h3>
+    <p>We ship via USPS, UPS, or FedEx depending on your location and order size. Tracking information will be provided for all shipments.</p>
+    <h3>Domestic Shipping</h3>
+    <p>We currently ship to all 50 US states. Alaska and Hawaii may have extended delivery times and additional shipping fees.</p>
+    <h3>International Shipping</h3>
+    <p>We do not currently offer international shipping. We hope to expand in the future — sign up for our newsletter to stay informed.</p>
+    <h3>Damaged or Lost Packages</h3>
+    <p>If your order arrives damaged, please contact us within 7 days at hello@thecandlebunkhouse.com with photos of the damage. We will work quickly to make it right. For lost packages, please allow an additional 3–5 business days past the estimated delivery date before contacting us, as delays sometimes occur with carriers.</p>
+    <h3>Address Accuracy</h3>
+    <p>Please ensure your shipping address is correct at checkout. We are not responsible for orders shipped to incorrectly entered addresses. Contact us immediately if you need to update your address before your order ships.</p>
+    <h3>Contact</h3>
+    <p>Shipping questions? Email us at <a href="mailto:hello@thecandlebunkhouse.com">hello@thecandlebunkhouse.com</a>.</p>
+  </div>
+</div>
+
+<!-- RETURNS & REFUNDS -->
+<div class="legal-overlay" id="legal-returns" onclick="closeLegal(event,'returns')">
+  <div class="legal-box">
+    <button class="legal-close" onclick="closeLegalById('returns')">✕</button>
+    <h2>Returns & Refund Policy</h2>
+    <p class="legal-date">Last updated: January 1, 2026</p>
+    <p>Your satisfaction is our top priority. We stand behind the quality of every candle we make. Please review our return and refund policy below.</p>
+    <h3>Our Satisfaction Guarantee</h3>
+    <p>If you are not completely satisfied with your purchase, we want to hear from you. We will do our best to make it right.</p>
+    <h3>Returns</h3>
+    <p>Due to the handcrafted and consumable nature of our candles, we generally do not accept returns on items that have been burned or used. However, we accept returns of unused, unopened items within 14 days of delivery. Items must be in their original condition and packaging.</p>
+    <h3>To Initiate a Return</h3>
+    <ul>
+      <li>Email us at hello@thecandlebunkhouse.com within 14 days of receiving your order</li>
+      <li>Include your order number, the item(s) you wish to return, and the reason for return</li>
+      <li>We will provide a return shipping address and instructions</li>
+      <li>Return shipping costs are the responsibility of the customer unless the return is due to our error</li>
+    </ul>
+    <h3>Refunds</h3>
+    <p>Once we receive and inspect your return, we will notify you of the approval or rejection of your refund. Approved refunds will be processed to your original payment method within 5–10 business days. Please note that original shipping charges are non-refundable.</p>
+    <h3>Damaged or Defective Items</h3>
+    <p>If you receive a damaged or defective item, please email us at hello@thecandlebunkhouse.com within 7 days of delivery with photos of the damage. We will send a replacement or issue a full refund at no cost to you — no return required for damaged items.</p>
+    <h3>Wrong Item Received</h3>
+    <p>If you receive the wrong item, contact us immediately at hello@thecandlebunkhouse.com. We will ship the correct item and cover all associated costs.</p>
+    <h3>Non-Returnable Items</h3>
+    <ul>
+      <li>Candles that have been burned or used</li>
+      <li>Items marked as final sale</li>
+      <li>Gift cards</li>
+    </ul>
+    <h3>Contact</h3>
+    <p>Questions about returns? Email us at <a href="mailto:hello@thecandlebunkhouse.com">hello@thecandlebunkhouse.com</a> — we respond to every message personally.</p>
+  </div>
+</div>
+
+<!-- CART -->
 <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
 <div class="cart-drawer" id="cartDrawer">
-  <div class="cart-header">
+  <div class="cart-hdr">
     <h2>Your Cart</h2>
-    <button class="cart-close" onclick="closeCart()">✕</button>
+    <button class="cart-x" onclick="closeCart()">✕</button>
   </div>
   <div class="cart-items" id="cartItems"></div>
-  <div class="cart-footer" id="cartFooter" style="display:none">
-    <div class="cart-subtotal">
-      <span class="label">Subtotal</span>
-      <span class="amount" id="cartTotal">$0.00</span>
-    </div>
-    <div class="cart-shipping-note">✓ Free shipping on orders over $35</div>
-    <button class="btn-checkout" onclick="showCheckoutMessage()">Proceed to Checkout →</button>
-    <button class="btn-continue" onclick="closeCart()">Continue Shopping</button>
-    <p class="stripe-note">🔒 Secure checkout — payment coming soon</p>
+  <div class="cart-ftr" id="cartFtr" style="display:none">
+    <div class="cart-sub"><span class="lbl">Subtotal</span><span class="amt" id="cartTotal">$0.00</span></div>
+    <div class="cart-ship">✓ Free shipping on orders over $35</div>
+    <button class="btn-checkout" onclick="checkoutMsg()">Proceed to Checkout →</button>
+    <button class="btn-cont" onclick="closeCart()">Continue Shopping</button>
+    <p class="stripe-note">🔒 Secure checkout · Payment coming soon</p>
   </div>
 </div>
 
 <!-- PRODUCT MODAL -->
-<div class="modal-overlay" id="modalOverlay" onclick="closeModalIfBg(event)">
-  <div class="modal" id="modalBox">
-    <button class="modal-close" onclick="closeModal()">✕</button>
-    <div class="modal-thumb" id="modalThumb"></div>
+<div class="modal-overlay" id="mOverlay" onclick="closeMIfBg(event)">
+  <div class="modal" id="mBox">
+    <button class="modal-x" onclick="closeM()">✕</button>
+    <div id="mThumb"></div>
     <div class="modal-body">
-      <div class="modal-badge-row" id="modalBadges"></div>
-      <div class="modal-title" id="modalTitle"></div>
-      <div class="modal-size" id="modalSize"></div>
-      <div class="modal-price-row">
-        <div class="modal-price" id="modalPrice"></div>
-      </div>
-      <div class="modal-scents" id="modalScents"></div>
-      <p class="modal-desc" id="modalDesc"></p>
-      <div class="modal-qty-row">
-        <span class="modal-qty-label">Qty</span>
-        <div class="modal-qty-ctrl">
-          <button onclick="adjustModalQty(-1)">−</button>
-          <input type="number" id="modalQty" value="1" min="1" max="20">
-          <button onclick="adjustModalQty(1)">+</button>
+      <div class="modal-badges" id="mBadges"></div>
+      <div class="modal-title" id="mTitle"></div>
+      <div class="modal-size" id="mSize"></div>
+      <div class="modal-price" id="mPrice"></div>
+      <div class="modal-scents" id="mScents"></div>
+      <p class="modal-desc" id="mDesc"></p>
+      <div class="modal-qrow">
+        <span class="modal-qlbl">Qty</span>
+        <div class="modal-qctrl">
+          <button onclick="adjQty(-1)">−</button>
+          <input type="number" id="mQty" value="1" min="1" max="20">
+          <button onclick="adjQty(1)">+</button>
         </div>
       </div>
-      <button class="btn-modal-add" id="modalAddBtn" onclick="addFromModal()">Add to Cart 🛒</button>
+      <button class="btn-modal-add" onclick="addFromModal()">Add to Cart 🛒</button>
       <div class="modal-trust">
         <span>🌿 Non-toxic wax</span>
         <span>👐 Hand-poured</span>
@@ -1618,238 +1473,216 @@ footer {
 <div class="toast" id="toast"></div>
 
 <script>
-// ============================================================
-// PRODUCT DATA
-// ============================================================
+// =============================================
+// PRODUCT DATA — all 20 with real Etsy image URLs
+// =============================================
 const products = [
-  {id:1,  name:"Côte d'Azur",           emoji:"🌊", price:12.50, size:"8oz Tin",  badge:"new",        category:"coastal",   scents:"Marine · Jasmine · Sandalwood",           desc:"Inspired by the French Riviera — a luxurious coastal breeze of ocean air, blooming jasmine, and warm sandalwood. Transport yourself to the South of France with every burn."},
-  {id:2,  name:"Sea Salt & Orchid",     emoji:"🌸", price:12.50, size:"8oz Tin",  badge:"bestseller", category:"coastal",   scents:"Ozone · Amber · Tonka Bean",              desc:"A best-selling calming ocean scent. Crisp sea salt and exotic orchid blended with warm amber and tonka bean — your favorite spa day, in a tin."},
-  {id:3,  name:"Sailing in the High Tides", emoji:"⛵", price:12.50, size:"8oz Tin", badge:"",        category:"coastal",   scents:"Ozone · Citrus · Jasmine",                desc:"Fresh ocean air with a bright citrus lift and a hint of white florals. Close your eyes and feel the salt wind on your face."},
-  {id:4,  name:"Lemon Meringue Pie",    emoji:"🍋", price:12.50, size:"8oz Tin",  badge:"new",        category:"bakery",    scents:"Lemon · Vanilla · Pie Crust",             desc:"Bright, sweet, and utterly irresistible. The scent of a golden lemon meringue pie fresh from the oven — tart lemon, creamy vanilla, and buttery crust."},
-  {id:5,  name:"Vanilla",               emoji:"🍦", price:12.50, size:"8oz Tin",  badge:"bestseller", category:"bakery",    scents:"Buttercream · Cake · Bourbon Vanilla",    desc:"Warm, cozy, and comforting. Layers of buttercream, vanilla cake, and rich bourbon vanilla — the dessert you never want to stop smelling."},
-  {id:6,  name:"A Thousand Wishes",     emoji:"🥂", price:12.50, size:"8oz Tin",  badge:"",           category:"floral",    scents:"Champagne · Peony · Amber",               desc:"Sweet and feminine with a celebratory sparkle. Champagne bubbles, soft peony, and warm amber — the perfect gift candle for any occasion."},
-  {id:7,  name:"Vanilla Orchid",        emoji:"🌺", price:12.50, size:"8oz Tin",  badge:"",           category:"floral",    scents:"Vanilla · Jasmine · Sandalwood",          desc:"Creamy, exotic, and deeply relaxing. Silky vanilla and rare orchid blended with warm jasmine and sandalwood — a spa experience at home."},
-  {id:8,  name:"Bohemian Rose",         emoji:"🌹", price:12.50, size:"8oz Tin",  badge:"",           category:"floral",    scents:"Grapefruit · Magnolia · Patchouli",       desc:"Fresh rose water with a bohemian twist. Tart grapefruit and blooming magnolia grounded with earthy patchouli — romantic and free-spirited."},
-  {id:9,  name:"Orange Blossom",        emoji:"🍊", price:12.50, size:"8oz Tin",  badge:"",           category:"floral",    scents:"Neroli · Jasmine · Sandalwood",           desc:"Bright and energizing with a floral heart. Sun-warmed neroli blossoms, white jasmine, and grounding sandalwood — uplifting and fresh."},
-  {id:10, name:"Hello Beautiful",       emoji:"✨", price:12.50, size:"8oz Tin",  badge:"",           category:"floral",    scents:"Citrus · White Floral · Amber",           desc:"A self-love candle. Bright citrus and soft white florals on a warm amber base — feminine, elegant, and completely uplifting."},
-  {id:11, name:"Desert Citrus",         emoji:"🏜️", price:12.50, size:"8oz Tin", badge:"new",        category:"citrus",    scents:"Orange · Lemon · Agave",                  desc:"Arizona in a candle. Bright sun-ripened orange and lemon with a sweet agave finish — clean, uplifting, and perfectly Southwest."},
-  {id:12, name:"Lemon Verbena",         emoji:"🍃", price:12.50, size:"8oz Tin",  badge:"",           category:"citrus",    scents:"Lemon · Sugar · Lemongrass",              desc:"Fresh, clean, and summery. Zesty lemon and crisp lemongrass with a hint of sugar — a bright and refreshing home fragrance."},
-  {id:13, name:"Yuzu Blossom",          emoji:"🌼", price:12.50, size:"8oz Tin",  badge:"new",        category:"citrus",    scents:"Bergamot · Grapefruit · Jasmine",         desc:"Exotic citrus meets delicate floral. Bright yuzu and bergamot layered with grapefruit and jasmine — uplifting and uniquely beautiful."},
-  {id:14, name:"Honeydew Melon",        emoji:"🍈", price:12.50, size:"8oz Tin",  badge:"",           category:"citrus",    scents:"Cucumber · Melon · Sugar",                desc:"Sweet summer in a tin. Fresh honeydew melon and crisp cucumber with a sugary finish — clean, light, and absolutely refreshing."},
-  {id:15, name:"Fog & Fern",            emoji:"🌲", price:12.50, size:"8oz Tin",  badge:"",           category:"woodsy",    scents:"Ozone · Lavender · Moss",                 desc:"A walk through a misty forest. Earthy moss and fresh ozone with a calming lavender heart — grounding, natural, and deeply relaxing."},
-  {id:16, name:"Sandalwood",            emoji:"🪵", price:12.50, size:"8oz Tin",  badge:"",           category:"woodsy",    scents:"Amber · Musk · Amyris",                   desc:"Warm, grounding, and meditative. Rich sandalwood and amyris with earthy amber and soft musk — perfect for meditation or simply unwinding."},
-  {id:17, name:"Barber Shop",           emoji:"💈", price:12.50, size:"8oz Tin",  badge:"",           category:"woodsy",    scents:"Bergamot · Tonka Bean · Musk",            desc:"A clean, masculine classic. Fresh bergamot and warm tonka bean with soft musk — the signature scent of a classic barbershop, made for him."},
-  {id:18, name:"Paint Can — 8oz",       emoji:"🪣", price:3.00,  size:"8oz Tin",  badge:"",           category:"specialty", scents:"Parasoy Wax · Various Scents",            desc:"Our iconic paint can presentation — 8oz size. A hand-poured parasoy candle in a charming mini paint can. Unique, highly scented, and makes a fantastic gift."},
-  {id:19, name:"Paint Can — 16oz",      emoji:"🪣", price:6.00,  size:"16oz Tin", badge:"",           category:"specialty", scents:"Parasoy Wax · Home Décor",                desc:"Our beloved 16oz paint can — bigger burn, bigger scent throw. A statement piece for your home that smells as good as it looks."},
-  {id:20, name:"8oz Tin — Cozy Mix",    emoji:"🕯️", price:12.50, size:"8oz Tin", badge:"",           category:"specialty", scents:"Multiple Aromas Available",              desc:"Hand-poured 8oz tin candles available in a variety of cozy aromas. Pick your mood — fresh, warm, floral, or earthy — and let Raquel fill your home with it."},
+  {id:1,  name:"Côte d'Azur",               emoji:"🌊", img:"https://i.etsystatic.com/8814390/r/il/996099/7956630097/il_340x270.7956630097_jr2l.jpg",  price:12.50, size:"8oz Tin",  badge:"new",        cat:"coastal",   scents:"Marine · Jasmine · Sandalwood",        desc:"Inspired by the French Riviera — a luxurious coastal breeze of ocean air, blooming jasmine, and warm sandalwood. Transport yourself to the South of France with every burn."},
+  {id:2,  name:"Sea Salt & Orchid",          emoji:"🌸", img:"https://i.etsystatic.com/8814390/r/il/19de92/7957172685/il_340x270.7957172685_o7vm.jpg", price:12.50, size:"8oz Tin",  badge:"bestseller", cat:"coastal",   scents:"Ozone · Amber · Tonka Bean",           desc:"A best-selling calming ocean scent. Crisp sea salt and exotic orchid blended with warm amber and tonka bean — your favorite spa day in a tin."},
+  {id:3,  name:"Sailing in the High Tides",  emoji:"⛵", img:"https://i.etsystatic.com/8814390/r/il/b46805/7956864367/il_340x270.7956864367_9wqb.jpg", price:12.50, size:"8oz Tin",  badge:"",           cat:"coastal",   scents:"Ozone · Citrus · Jasmine",             desc:"Fresh ocean air with a bright citrus lift and a hint of white florals. Close your eyes and feel the salt wind on your face."},
+  {id:4,  name:"Lemon Meringue Pie",         emoji:"🍋", img:"https://i.etsystatic.com/8814390/r/il/6602c1/7971514947/il_340x270.7971514947_h825.jpg", price:12.50, size:"8oz Tin",  badge:"new",        cat:"bakery",    scents:"Lemon · Vanilla · Pie Crust",          desc:"Bright, sweet, and utterly irresistible. The scent of a golden lemon meringue pie fresh from the oven — tart lemon, creamy vanilla, and buttery crust."},
+  {id:5,  name:"Vanilla",                    emoji:"🍦", img:"https://i.etsystatic.com/8814390/r/il/908d3c/7916009588/il_340x270.7916009588_erm0.jpg", price:12.50, size:"8oz Tin",  badge:"bestseller", cat:"bakery",    scents:"Buttercream · Cake · Bourbon Vanilla", desc:"Warm, cozy, and comforting. Layers of buttercream, vanilla cake, and rich bourbon vanilla — the dessert you never want to stop smelling."},
+  {id:6,  name:"A Thousand Wishes",          emoji:"🥂", img:"https://i.etsystatic.com/8814390/r/il/1d7342/7963903651/il_340x270.7963903651_tdd8.jpg", price:12.50, size:"8oz Tin",  badge:"",           cat:"floral",    scents:"Champagne · Peony · Amber",            desc:"Sweet and feminine with a celebratory sparkle. Champagne bubbles, soft peony, and warm amber — the perfect gift candle."},
+  {id:7,  name:"Vanilla Orchid",             emoji:"🌺", img:"https://i.etsystatic.com/8814390/r/il/dc1ea2/7915875294/il_340x270.7915875294_mdld.jpg", price:12.50, size:"8oz Tin",  badge:"",           cat:"floral",    scents:"Vanilla · Jasmine · Sandalwood",       desc:"Creamy, exotic, and deeply relaxing. Silky vanilla and rare orchid blended with warm jasmine and sandalwood — a spa at home."},
+  {id:8,  name:"Bohemian Rose",              emoji:"🌹", img:"https://i.etsystatic.com/8814390/r/il/c5798e/7957271347/il_340x270.7957271347_6tan.jpg", price:12.50, size:"8oz Tin",  badge:"",           cat:"floral",    scents:"Grapefruit · Magnolia · Patchouli",    desc:"Fresh rose water with a bohemian twist. Tart grapefruit and blooming magnolia grounded with earthy patchouli — romantic and free-spirited."},
+  {id:9,  name:"Orange Blossom",             emoji:"🍊", img:"https://i.etsystatic.com/8814390/r/il/96fb6f/7916110906/il_340x270.7916110906_e0ja.jpg", price:12.50, size:"8oz Tin",  badge:"",           cat:"floral",    scents:"Neroli · Jasmine · Sandalwood",        desc:"Bright and energizing. Sun-warmed neroli blossoms, white jasmine, and grounding sandalwood — uplifting and fresh."},
+  {id:10, name:"Hello Beautiful",            emoji:"✨", img:"https://i.etsystatic.com/8814390/r/il/fd0701/7957355663/il_340x270.7957355663_swil.jpg", price:12.50, size:"8oz Tin",  badge:"",           cat:"floral",    scents:"Citrus · White Floral · Amber",        desc:"A self-love candle. Bright citrus and soft white florals on a warm amber base — feminine, elegant, and completely uplifting."},
+  {id:11, name:"Desert Citrus",              emoji:"🏜️",img:"https://i.etsystatic.com/8814390/r/il/fc32e6/7923434088/il_340x270.7923434088_iwvy.jpg", price:12.50, size:"8oz Tin",  badge:"new",        cat:"citrus",    scents:"Orange · Lemon · Agave",               desc:"Arizona in a candle. Bright sun-ripened orange and lemon with a sweet agave finish — clean, uplifting, and perfectly Southwest."},
+  {id:12, name:"Lemon Verbena",              emoji:"🍃", img:"https://i.etsystatic.com/8814390/r/il/08242e/7908977054/il_340x270.7908977054_2376.jpg", price:12.50, size:"8oz Tin",  badge:"",           cat:"citrus",    scents:"Lemon · Sugar · Lemongrass",           desc:"Fresh, clean, and summery. Zesty lemon and crisp lemongrass with a hint of sugar — bright and refreshing."},
+  {id:13, name:"Yuzu Blossom",               emoji:"🌼", img:"https://i.etsystatic.com/8814390/r/il/8e8389/7964018747/il_340x270.7964018747_204x.jpg", price:12.50, size:"8oz Tin",  badge:"new",        cat:"citrus",    scents:"Bergamot · Grapefruit · Jasmine",      desc:"Exotic citrus meets delicate floral. Bright yuzu and bergamot layered with grapefruit and jasmine — uplifting and unique."},
+  {id:14, name:"Honeydew Melon",             emoji:"🍈", img:"https://i.etsystatic.com/8814390/r/il/07478b/7971479435/il_340x270.7971479435_a46x.jpg", price:12.50, size:"8oz Tin",  badge:"",           cat:"citrus",    scents:"Cucumber · Melon · Sugar",             desc:"Sweet summer in a tin. Fresh honeydew melon and crisp cucumber with a sugary finish — light and absolutely refreshing."},
+  {id:15, name:"Fog & Fern",                 emoji:"🌲", img:"https://i.etsystatic.com/8814390/r/il/0e49a8/7963746877/il_340x270.7963746877_948a.jpg", price:12.50, size:"8oz Tin",  badge:"",           cat:"woodsy",    scents:"Ozone · Lavender · Moss",              desc:"A walk through a misty forest. Earthy moss and fresh ozone with a calming lavender heart — grounding and deeply relaxing."},
+  {id:16, name:"Sandalwood",                 emoji:"🪵", img:"https://i.etsystatic.com/8814390/r/il/0a218b/7957071343/il_340x270.7957071343_e16e.jpg", price:12.50, size:"8oz Tin",  badge:"",           cat:"woodsy",    scents:"Amber · Musk · Amyris",                desc:"Warm, grounding, and meditative. Rich sandalwood and amyris with earthy amber and soft musk — perfect for unwinding."},
+  {id:17, name:"Barber Shop",                emoji:"💈", img:"https://i.etsystatic.com/8814390/r/il/891922/7957123417/il_340x270.7957123417_51m8.jpg", price:12.50, size:"8oz Tin",  badge:"",           cat:"woodsy",    scents:"Bergamot · Tonka Bean · Musk",         desc:"A clean, masculine classic. Fresh bergamot and warm tonka bean with soft musk — the signature scent of a classic barbershop."},
+  {id:18, name:"Paint Can Candle — 8oz",     emoji:"🪣", img:"https://i.etsystatic.com/8814390/r/il/6ab8cb/6111653405/il_340x270.6111653405_opwj.jpg", price:3.00,  size:"8oz Tin",  badge:"",           cat:"specialty", scents:"Parasoy Wax · Various Scents",         desc:"Our iconic paint can presentation — 8oz size. Hand-poured parasoy in a charming mini paint can. Unique, highly scented, fantastic gift."},
+  {id:19, name:"Paint Can Candle — 16oz",    emoji:"🪣", img:"https://i.etsystatic.com/8814390/r/il/1d2882/6111599671/il_340x270.6111599671_puwo.jpg", price:6.00,  size:"16oz Tin", badge:"",           cat:"specialty", scents:"Parasoy Wax · Home Décor",             desc:"Our beloved 16oz paint can — bigger burn, bigger scent throw. A statement piece for your home that smells as good as it looks."},
+  {id:20, name:"8oz Tin Candles — Cozy Mix", emoji:"🕯️",img:"https://i.etsystatic.com/8814390/r/il/786ac9/7630275883/il_340x270.7630275883_tb5j.jpg", price:12.50, size:"8oz Tin",  badge:"",           cat:"specialty", scents:"Multiple Aromas Available",            desc:"Hand-poured 8oz tin candles in a variety of cozy aromas. Pick your mood — fresh, warm, floral, or earthy — and let Raquel fill your home with it."},
 ];
 
-// ============================================================
+// =============================================
 // CART STATE
-// ============================================================
+// =============================================
 let cart = [];
-let currentModalProduct = null;
+let curProd = null;
 
-function cartTotal() {
-  return cart.reduce((sum, item) => sum + item.price * item.qty, 0);
-}
-function cartItemCount() {
-  return cart.reduce((sum, item) => sum + item.qty, 0);
-}
-function updateCartBadge() {
-  const count = cartItemCount();
-  const el = document.getElementById('cartCount');
-  el.textContent = count;
-  el.classList.toggle('hidden', count === 0);
+const cartTotal = () => cart.reduce((s,i)=>s+i.price*i.qty,0);
+const cartCount = () => cart.reduce((s,i)=>s+i.qty,0);
+
+function updateBadge(){
+  const n=cartCount(), el=document.getElementById('cartCount');
+  el.textContent=n; el.classList.toggle('hidden',n===0);
 }
 
-// ============================================================
+// =============================================
 // RENDER PRODUCTS
-// ============================================================
-function renderProducts(filter) {
-  const filtered = filter === 'all' ? products : products.filter(p => p.category === filter);
-  const grid = document.getElementById('productsGrid');
-  grid.innerHTML = filtered.map(p => `
-    <div class="product-card" onclick="openModal(${p.id})">
-      <div class="product-thumb" style="position:relative">
-        <div class="product-badges" style="position:absolute;top:0.6rem;left:0.6rem;z-index:1">
-          ${p.badge === 'bestseller' ? '<span class="badge badge-bestseller">Best Seller</span>' : ''}
-          ${p.badge === 'new' ? '<span class="badge badge-new">New</span>' : ''}
+// =============================================
+function renderP(cat){
+  const list = cat==='all' ? products : products.filter(p=>p.cat===cat);
+  document.getElementById('pgrid').innerHTML = list.map(p=>`
+    <div class="pcard" onclick="openM(${p.id})">
+      <div class="pthumb" style="position:relative">
+        <div class="pbadges">
+          ${p.badge==='bestseller'?'<span class="badge badge-bs">Best Seller</span>':''}
+          ${p.badge==='new'?'<span class="badge badge-new">New</span>':''}
         </div>
-        <span style="font-size:3.5rem">${p.emoji}</span>
+        <img src="${p.img}" alt="${p.name}" loading="lazy"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+          style="width:100%;height:100%;object-fit:cover;display:block">
+        <div class="pthumb-emoji" style="display:none">${p.emoji}</div>
       </div>
-      <div class="product-body">
-        <div class="product-size">${p.size}</div>
-        <div class="product-name">${p.name}</div>
-        <div class="product-scent">${p.scents}</div>
-        <div class="product-footer">
-          <div class="product-price">$${p.price.toFixed(2)}</div>
-          <button class="btn-add" onclick="event.stopPropagation(); quickAdd(${p.id})">Add to Cart</button>
+      <div class="pbody">
+        <div class="psize">${p.size}</div>
+        <div class="pname">${p.name}</div>
+        <div class="pscent">${p.scents}</div>
+        <div class="pfoot">
+          <div class="pprice">$${p.price.toFixed(2)}</div>
+          <button class="btn-add" onclick="event.stopPropagation();quickAdd(${p.id})">Add to Cart</button>
         </div>
       </div>
     </div>
   `).join('');
 }
 
-function filterProducts(cat, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+function filterP(cat, btn){
+  document.querySelectorAll('.fbtn').forEach(b=>b.classList.remove('active'));
   if(btn) btn.classList.add('active');
-  renderProducts(cat);
-  document.getElementById('shop').scrollIntoView({behavior:'smooth', block:'start'});
+  else {
+    document.querySelectorAll('.fbtn').forEach(b=>{
+      if(b.textContent.toLowerCase().includes(cat)||cat==='all') b.classList.toggle('active',cat==='all'||b.textContent.toLowerCase().includes(cat));
+    });
+  }
+  renderP(cat);
+  document.getElementById('shop').scrollIntoView({behavior:'smooth',block:'start'});
 }
 
-function filterBtn(cat) {
-  const btns = document.querySelectorAll('.filter-btn');
-  btns.forEach(b => {
-    b.classList.remove('active');
-    if(b.textContent.toLowerCase().includes(cat)) b.classList.add('active');
-  });
-  renderProducts(cat);
-}
-
-// ============================================================
+// =============================================
 // QUICK ADD
-// ============================================================
-function quickAdd(id) {
-  const product = products.find(p => p.id === id);
-  addToCart(product, 1);
-  showToast(`🕯️ ${product.name} added to cart`);
+// =============================================
+function quickAdd(id){
+  const p=products.find(x=>x.id===id);
+  addToCart(p,1);
+  showToast(`🕯️ ${p.name} added to cart`);
+}
+function addToCart(p,qty){
+  const ex=cart.find(i=>i.id===p.id);
+  if(ex) ex.qty+=qty; else cart.push({...p,qty});
+  updateBadge(); renderCart();
 }
 
-function addToCart(product, qty) {
-  const existing = cart.find(i => i.id === product.id);
-  if (existing) existing.qty += qty;
-  else cart.push({ ...product, qty });
-  updateCartBadge();
-  renderCart();
-}
-
-// ============================================================
+// =============================================
 // CART DRAWER
-// ============================================================
-function openCart() {
+// =============================================
+function openCart(){
   document.getElementById('cartOverlay').classList.add('open');
   document.getElementById('cartDrawer').classList.add('open');
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflow='hidden';
 }
-function closeCart() {
+function closeCart(){
   document.getElementById('cartOverlay').classList.remove('open');
   document.getElementById('cartDrawer').classList.remove('open');
-  document.body.style.overflow = '';
+  document.body.style.overflow='';
 }
-
-function renderCart() {
-  const container = document.getElementById('cartItems');
-  const footer = document.getElementById('cartFooter');
-  if (cart.length === 0) {
-    container.innerHTML = `<div class="cart-empty"><div class="empty-icon">🕯️</div><p>Your cart is empty.<br>Browse our collection and add something beautiful!</p></div>`;
-    footer.style.display = 'none';
-    return;
+function renderCart(){
+  const c=document.getElementById('cartItems'), f=document.getElementById('cartFtr');
+  if(!cart.length){
+    c.innerHTML='<div class="cart-empty"><div class="ei">🕯️</div><p>Your cart is empty.<br>Browse our collection!</p></div>';
+    f.style.display='none'; return;
   }
-  footer.style.display = 'block';
-  container.innerHTML = cart.map(item => `
-    <div class="cart-item">
-      <div class="cart-item-emoji">${item.emoji}</div>
-      <div class="cart-item-info">
-        <div class="cart-item-name">${item.name}</div>
-        <div class="cart-item-size">${item.size}</div>
-        <div class="cart-item-controls">
-          <button class="qty-btn" onclick="changeQty(${item.id},-1)">−</button>
-          <span class="qty-num">${item.qty}</span>
-          <button class="qty-btn" onclick="changeQty(${item.id},1)">+</button>
-          <button class="remove-btn" onclick="removeItem(${item.id})">Remove</button>
+  f.style.display='block';
+  c.innerHTML=cart.map(item=>`
+    <div class="citem">
+      <div class="citem-img">
+        <img src="${item.img}" alt="${item.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="citem-img-emoji" style="display:none">${item.emoji}</div>
+      </div>
+      <div class="citem-info">
+        <div class="citem-name">${item.name}</div>
+        <div class="citem-size">${item.size}</div>
+        <div class="citem-ctrl">
+          <button class="qbtn" onclick="chgQty(${item.id},-1)">−</button>
+          <span class="qnum">${item.qty}</span>
+          <button class="qbtn" onclick="chgQty(${item.id},1)">+</button>
+          <button class="rm-btn" onclick="rmItem(${item.id})">Remove</button>
         </div>
       </div>
-      <div class="cart-item-price">$${(item.price * item.qty).toFixed(2)}</div>
+      <div class="citem-price">$${(item.price*item.qty).toFixed(2)}</div>
     </div>
   `).join('');
-  document.getElementById('cartTotal').textContent = '$' + cartTotal().toFixed(2);
+  document.getElementById('cartTotal').textContent='$'+cartTotal().toFixed(2);
 }
-
-function changeQty(id, delta) {
-  const item = cart.find(i => i.id === id);
-  if (!item) return;
-  item.qty += delta;
-  if (item.qty <= 0) cart = cart.filter(i => i.id !== id);
-  updateCartBadge();
-  renderCart();
+function chgQty(id,d){
+  const i=cart.find(x=>x.id===id); if(!i) return;
+  i.qty+=d; if(i.qty<=0) cart=cart.filter(x=>x.id!==id);
+  updateBadge(); renderCart();
 }
+function rmItem(id){ cart=cart.filter(x=>x.id!==id); updateBadge(); renderCart(); }
+function checkoutMsg(){ closeCart(); showToast('💳 Secure checkout coming soon — contact us to order!'); }
 
-function removeItem(id) {
-  cart = cart.filter(i => i.id !== id);
-  updateCartBadge();
-  renderCart();
-}
-
-function showCheckoutMessage() {
-  closeCart();
-  showToast('💳 Secure checkout coming soon — contact us to order!');
-}
-
-// ============================================================
+// =============================================
 // PRODUCT MODAL
-// ============================================================
-function openModal(id) {
-  const p = products.find(x => x.id === id);
-  currentModalProduct = p;
-  document.getElementById('modalThumb').textContent = p.emoji;
-  document.getElementById('modalBadges').innerHTML =
-    (p.badge === 'bestseller' ? '<span class="badge badge-bestseller">Best Seller</span>' : '') +
-    (p.badge === 'new' ? '<span class="badge badge-new">New</span>' : '');
-  document.getElementById('modalTitle').textContent = p.name;
-  document.getElementById('modalSize').textContent = p.size;
-  document.getElementById('modalPrice').textContent = '$' + p.price.toFixed(2);
-  document.getElementById('modalScents').innerHTML = '🌿 Scent notes: <span>' + p.scents + '</span>';
-  document.getElementById('modalDesc').textContent = p.desc;
-  document.getElementById('modalQty').value = 1;
-  document.getElementById('modalOverlay').classList.add('open');
-  document.body.style.overflow = 'hidden';
+// =============================================
+function openM(id){
+  const p=products.find(x=>x.id===id); curProd=p;
+  document.getElementById('mThumb').innerHTML=
+    `<img src="${p.img}" alt="${p.name}" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px 14px 0 0;display:block"
+       onerror="this.outerHTML='<div class=\\"modal-thumb-emoji\\">${p.emoji}</div>'">`;
+  document.getElementById('mBadges').innerHTML=
+    (p.badge==='bestseller'?'<span class="badge badge-bs">Best Seller</span>':'')+
+    (p.badge==='new'?'<span class="badge badge-new">New</span>':'');
+  document.getElementById('mTitle').textContent=p.name;
+  document.getElementById('mSize').textContent=p.size;
+  document.getElementById('mPrice').textContent='$'+p.price.toFixed(2);
+  document.getElementById('mScents').innerHTML='🌿 Scent notes: <span>'+p.scents+'</span>';
+  document.getElementById('mDesc').textContent=p.desc;
+  document.getElementById('mQty').value=1;
+  document.getElementById('mOverlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeM(){ document.getElementById('mOverlay').classList.remove('open'); document.body.style.overflow=''; }
+function closeMIfBg(e){ if(e.target===document.getElementById('mOverlay')) closeM(); }
+function adjQty(d){ const el=document.getElementById('mQty'); el.value=Math.max(1,Math.min(20,parseInt(el.value)+d)); }
+function addFromModal(){
+  if(!curProd) return;
+  const qty=Math.max(1,parseInt(document.getElementById('mQty').value)||1);
+  addToCart(curProd,qty);
+  showToast(`🕯️ ${curProd.name} ×${qty} added to cart`);
+  closeM(); openCart();
 }
 
-function closeModal() {
-  document.getElementById('modalOverlay').classList.remove('open');
-  document.body.style.overflow = '';
-}
+// =============================================
+// LEGAL OVERLAYS
+// =============================================
+function openLegal(id){ document.getElementById('legal-'+id).classList.add('open'); document.body.style.overflow='hidden'; }
+function closeLegalById(id){ document.getElementById('legal-'+id).classList.remove('open'); document.body.style.overflow=''; }
+function closeLegal(e,id){ if(e.target===document.getElementById('legal-'+id)) closeLegalById(id); }
 
-function closeModalIfBg(e) {
-  if (e.target === document.getElementById('modalOverlay')) closeModal();
-}
-
-function adjustModalQty(delta) {
-  const input = document.getElementById('modalQty');
-  const val = Math.max(1, Math.min(20, parseInt(input.value) + delta));
-  input.value = val;
-}
-
-function addFromModal() {
-  if (!currentModalProduct) return;
-  const qty = Math.max(1, parseInt(document.getElementById('modalQty').value) || 1);
-  addToCart(currentModalProduct, qty);
-  showToast(`🕯️ ${currentModalProduct.name} ×${qty} added to cart`);
-  closeModal();
-  openCart();
-}
-
-// ============================================================
+// =============================================
 // TOAST
-// ============================================================
-function showToast(msg) {
-  const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 2800);
+// =============================================
+function showToast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg; t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),2800);
 }
 
-// ============================================================
+// =============================================
 // FORMS
-// ============================================================
-function handleNewsletter(e) {
-  e.preventDefault();
-  e.target.reset();
-  showToast('🎉 You\'re on the list! Welcome to the Bunkhouse.');
-}
+// =============================================
+function handleNL(e){ e.preventDefault(); e.target.reset(); showToast("🎉 You're on the list! Welcome to the Bunkhouse."); }
+function handleContact(e){ e.preventDefault(); e.target.reset(); showToast("✉️ Message sent! Raquel will be in touch soon."); }
 
-function handleContactForm(e) {
-  e.preventDefault();
-  e.target.reset();
-  showToast('✉️ Message sent! Raquel wil
+// =============================================
+// NAV
+// =============================================
+function toggleNav(){ document.getElementById('navLinks').classList.toggle('open'); }
+function closeNav(){ document.getElementById('navLinks').classList.remove('open'); }
+window.addEventListener('scroll',()=>document.getElementById('navLinks').classList.remove('open'));
+
+// =============================================
+// INIT
+// =============================================
+renderP('all');
+renderCart();
+</script>
+</body>
+</html>
